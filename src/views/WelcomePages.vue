@@ -20,11 +20,11 @@
                 </div>
             
               <button class="First-button">
-                <h1> Влад лох</h1>
+                <h1>Вход</h1>
 
               </button>
               <button class="Second-button">
-                <h1> Влад пидр</h1>
+                <h1>Регистрация</h1>
 
               </button>
             
@@ -50,10 +50,10 @@
                 <div>Для школьников/студентов</div>
             </div> 
             <div class="Photo-text2">
-                <div>Для школьников/студентов</div>
+                <div>Для людев в IT</div>
             </div> 
             <div class="Photo-text3">
-                <div>Для школьников/студентов</div>
+                <div>Для любых желающих</div>
             </div> 
 
             

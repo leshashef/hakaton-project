@@ -21,9 +21,10 @@ html, body{
  .First-Tittle{
      font-size: 64px;
      text-align:center;
-     color:white;
+     color:rgb(168, 212, 248);
      position: static;
      left: 50%;
+     
  }
  .First-image{
      position: absolute;
@@ -46,8 +47,8 @@ html, body{
     width: 794px;
     height: 266px;
     background-color: #545796CC;
-    opacity: 60%;
-    border-radius: 20px;
+    opacity: 30%;
+    border-radius: 100px;
  }
  .First-Text{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -55,13 +56,7 @@ html, body{
     left:1100px;
     top: 185px;
     font-size: 45px;
-    color:white;
-    
- }
- .First-Button{
-   
- }
- .Second-Button{
+    color:rgb(202, 202, 202);
     
  }
  .Second-Text{
@@ -69,7 +64,7 @@ html, body{
     left: 50%;
     top: 800px;
     font-size: 45px;
-    color:white;
+    color:rgb(83, 83, 83);
  }
  .Photo1{
      height: 200px;
@@ -103,23 +98,25 @@ html, body{
     left: 25px;
     top:  1020px;
     font-size: 20px;
-    color:white;
+    color:rgb(87, 73, 73);
 }
 .Photo-text2{
     position: absolute;
-    left: 830px;
+    left: 880px;
     top:  1020px;
     font-size: 20px;
-    color:white;
+    color:rgb(87, 73, 73);
 }
 .Photo-text3{
     position: absolute;
-    left: 1645px;
+    left: 1670px;
     top:  1020px;
     font-size: 20px;
-    color:white;
+    color:rgb(87, 73, 73);
 }
 .First-button {
+    opacity:70%;
+    color: rgb(158, 176, 235);
     position: absolute;
     left:1000px;
     top: 500px;
@@ -140,6 +137,8 @@ html, body{
     box-shadow: 10px 15px 20px rgba(27, 183, 245, 0.4)
 }
 .Second-button {
+    color: rgb(158, 176, 235);
+    opacity:70%;
     position: absolute;
     left:1450px;
     top: 500px;
@@ -149,9 +148,11 @@ html, body{
     border-radius: 20px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    border: 0px;
 }
 .Second-button:hover {
     transform: translateY(-7px);
     background-color: #00abfa; /* Green */
     color: white;
+    box-shadow: 10px 15px 20px rgba(27, 183, 245, 0.4)
 }
