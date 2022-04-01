@@ -1,11 +1,6 @@
 <template>
   <header>
   </header>
-
-  <footer>
-     <router-link to = '/about'> About Page </router-link>
-      <router-link to = '/'> Home Page </router-link>
-  </footer>
   <router-view/>
 
 
@@ -13,7 +8,7 @@
 
 <script>
 
-
+import WelcomePage from '@/src/'
 export default {
   name: 'App',
   components: {
