@@ -22,5 +22,8 @@ module.exports = defineConfig({
       swSrc: './src/registerServiceWorker',
       // ...другие настройки Workbox...
     }
-  }
+  },
+  devServer: {
+    https: true
+},
 })
