@@ -2,7 +2,8 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/views/HomePage.vue";
 import About from "@/views/AboutPage.vue";
 import NotFound from "@/views/NotFoundPage.vue";
-import Welcomepage from "@/views/WelcomePages.vue"
+import Welcomepage from "@/views/WelcomePages.vue";
+import ListTest from "@/views/ListTestPage.vue";
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     path: "/about",
     name: "AboutPage",
     component: About,
+  },
+  {
+    path: "/list-test",
+    name: "ListTest",
+    component: ListTest,
   },
 
     {
