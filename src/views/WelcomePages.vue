@@ -1,7 +1,8 @@
 <template>
   <div class="background-img">
-     asdsadawad  
+    
   </div>
+  
 </template>
 
 <script>
