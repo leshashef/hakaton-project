@@ -1,23 +1,15 @@
 <template>
-  <div class="background-img">
-    <div class="text">
-       <div class="tittle">
-           Добро пожаловать
-      
-        </div> 
-        <div class="Titlesecond">
-           Данное приложение позволит вам определить вашу<br> предрасположенность в it
-
-        </div>
-    </div> 
-    <div class="tittle">
+  <div>
+    <div>
+       <div class="First-card">
+                
+       </div> 
+       <div class="Second-card">
+               
+       </div> 
     
-      
-      
     </div> 
   </div>
-  
-   
 </template>
 
 <script>
