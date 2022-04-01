@@ -129,11 +129,15 @@ html, body{
     border-radius: 20px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    border: 0px;
+    
+    
 }
 .First-button:hover {
     transform: translateY(-7px);
     background-color: #00abfa; /* Green */
     color: white;
+    box-shadow: 10px 15px 20px rgba(27, 183, 245, 0.4)
 }
 .Second-button {
     position: absolute;
