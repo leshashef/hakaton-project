@@ -18,9 +18,16 @@
               <div class="First-Text">
                    Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
                 </div>
-            <div class="First-Button">
+            
+              <button class="First-button">
+                <h1> Влад лох</h1>
 
-            </div>
+              </button>
+              <button class="Second-button">
+                <h1> Влад пидр</h1>
+
+              </button>
+            
             <div class="Second-Button">
 
             </div>

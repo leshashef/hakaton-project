@@ -47,9 +47,10 @@ html, body{
     height: 266px;
     background-color: #545796CC;
     opacity: 60%;
-    border-radius: 10%;
+    border-radius: 20px;
  }
  .First-Text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;
     left:1100px;
     top: 185px;
@@ -58,20 +59,10 @@ html, body{
     
  }
  .First-Button{
-    position: absolute;
-    left:1000px;
-    top: 500px;
-    width: 350px;
-    height: 100px;
-    background-color: #545796CC;
+   
  }
  .Second-Button{
-    position: absolute;
-    left:1450px;
-    top: 500px;
-    width: 350px;
-    height: 100px;
-    background-color: #545796CC;
+    
  }
  .Second-Text{
     position: static;
@@ -85,7 +76,7 @@ html, body{
      width: 200px;
      border-radius: 50%;
      position: absolute;
-     background-color: blue;
+     background-color: rgb(192, 117, 47);
      left: 50px;
      top: 810px;
  }
@@ -94,7 +85,7 @@ html, body{
     width: 200px;
     border-radius: 50%;
     position: absolute;
-    background-color: blue;
+    background-color: rgb(192, 117, 47);
     left: 1670px;
      top: 810px;
 }
@@ -103,7 +94,7 @@ html, body{
     width: 200px;
     border-radius: 50%;
     position: absolute;
-    background-color: blue;
+    background-color: rgb(192, 117, 47);
     left: 860px;
      top: 810px;
 }
@@ -127,4 +118,36 @@ html, body{
     top:  1020px;
     font-size: 20px;
     color:white;
+}
+.First-button {
+    position: absolute;
+    left:1000px;
+    top: 500px;
+    width: 350px;
+    height: 100px;
+    background-color: #545796CC;
+    border-radius: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.First-button:hover {
+    transform: translateY(-7px);
+    background-color: #00abfa; /* Green */
+    color: white;
+}
+.Second-button {
+    position: absolute;
+    left:1450px;
+    top: 500px;
+    width: 350px;
+    height: 100px;
+    background-color: #545796CC;
+    border-radius: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.Second-button:hover {
+    transform: translateY(-7px);
+    background-color: #00abfa; /* Green */
+    color: white;
 }
