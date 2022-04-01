@@ -34,21 +34,32 @@ html, body{
  }
  .emblem{
     position: absolute;
-    left:1225px;
+    left:1090px;
     top: 0px;
     width: 131px;
     height: 105px;
  }
+ .Background-text{
+    position: absolute;
+    left:1000px;
+    top: 160px;
+    width: 794px;
+    height: 266px;
+    background-color: #545796CC;
+    opacity: 60%;
+    border-radius: 10%;
+ }
  .First-Text{
     position: absolute;
-    left:1200px;
-    top: 150px;
+    left:1100px;
+    top: 185px;
     font-size: 45px;
     color:white;
+    
  }
  .First-Button{
     position: absolute;
-    left:1050px;
+    left:1000px;
     top: 500px;
     width: 350px;
     height: 100px;
@@ -56,7 +67,7 @@ html, body{
  }
  .Second-Button{
     position: absolute;
-    left:1550px;
+    left:1450px;
     top: 500px;
     width: 350px;
     height: 100px;
@@ -95,4 +106,25 @@ html, body{
     background-color: blue;
     left: 860px;
      top: 810px;
+}
+.Photo-text1{
+    position: absolute;
+    left: 25px;
+    top:  1020px;
+    font-size: 20px;
+    color:white;
+}
+.Photo-text2{
+    position: absolute;
+    left: 830px;
+    top:  1020px;
+    font-size: 20px;
+    color:white;
+}
+.Photo-text3{
+    position: absolute;
+    left: 1645px;
+    top:  1020px;
+    font-size: 20px;
+    color:white;
 }

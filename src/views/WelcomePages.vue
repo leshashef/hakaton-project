@@ -2,6 +2,7 @@
   <div>
     <div>
        <div class="First-card">
+           
             <div class="First-Tittle">
                 IT-Trend
             </div> 
@@ -11,9 +12,12 @@
              <div class="emblem">
                 <img src="/img/img/emblem.png" alt="error">
             </div>
-            <div class="First-Text">
-                Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
-            </div>
+              <div class="Background-text">
+                
+              </div>
+              <div class="First-Text">
+                   Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
+                </div>
             <div class="First-Button">
 
             </div>
@@ -24,7 +28,7 @@
        </div> 
        <div class="Second-card">
             <div class="Second-Text">
-                IT-Trend
+                Для кого подходит приложение?
             </div> 
             <div class="Photo1">
                 
@@ -35,6 +39,16 @@
             <div class="Photo3">
                 
             </div> 
+            <div class="Photo-text1">
+                <div>Для школьников/студентов</div>
+            </div> 
+            <div class="Photo-text2">
+                <div>Для школьников/студентов</div>
+            </div> 
+            <div class="Photo-text3">
+                <div>Для школьников/студентов</div>
+            </div> 
+
             
        </div> 
        
