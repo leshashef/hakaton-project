@@ -2,12 +2,42 @@
   <div>
     <div>
        <div class="First-card">
-                
+            <div class="First-Tittle">
+                IT-Trend
+            </div> 
+             <div class="First-image">
+                <img src="/img/img/image-welcome.png" alt="error">
+            </div>
+             <div class="emblem">
+                <img src="/img/img/emblem.png" alt="error">
+            </div>
+            <div class="First-Text">
+                Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
+            </div>
+            <div class="First-Button">
+
+            </div>
+            <div class="Second-Button">
+
+            </div>
+
        </div> 
        <div class="Second-card">
-               
+            <div class="Second-Text">
+                IT-Trend
+            </div> 
+            <div class="Photo1">
+                
+            </div> 
+            <div class="Photo2">
+                
+            </div> 
+            <div class="Photo3">
+                
+            </div> 
+            
        </div> 
-    
+       
     </div> 
   </div>
 </template>

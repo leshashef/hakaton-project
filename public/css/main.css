@@ -18,3 +18,81 @@ html, body{
     background-color: #C4C4C4;
     
  }
+ .First-Tittle{
+     font-size: 64px;
+     text-align:center;
+     color:white;
+     position: static;
+     left: 50%;
+ }
+ .First-image{
+     position: absolute;
+     left:0px;
+     top: 150px;
+     width: 682px;
+     height: 604px;
+ }
+ .emblem{
+    position: absolute;
+    left:1225px;
+    top: 0px;
+    width: 131px;
+    height: 105px;
+ }
+ .First-Text{
+    position: absolute;
+    left:1200px;
+    top: 150px;
+    font-size: 45px;
+    color:white;
+ }
+ .First-Button{
+    position: absolute;
+    left:1050px;
+    top: 500px;
+    width: 350px;
+    height: 100px;
+    background-color: #545796CC;
+ }
+ .Second-Button{
+    position: absolute;
+    left:1550px;
+    top: 500px;
+    width: 350px;
+    height: 100px;
+    background-color: #545796CC;
+ }
+ .Second-Text{
+    position: static;
+    left: 50%;
+    top: 800px;
+    font-size: 45px;
+    color:white;
+ }
+ .Photo1{
+     height: 200px;
+     width: 200px;
+     border-radius: 50%;
+     position: absolute;
+     background-color: blue;
+     left: 50px;
+     top: 810px;
+ }
+ .Photo2{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: blue;
+    left: 1670px;
+     top: 810px;
+}
+.Photo3{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: blue;
+    left: 860px;
+     top: 810px;
+}
