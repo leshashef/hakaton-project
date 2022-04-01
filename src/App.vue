@@ -1,6 +1,5 @@
 <template>
-  <header>
-  </header>
+ 
   <router-view/>
 
 
@@ -8,7 +7,7 @@
 
 <script>
 
-import WelcomePage from '@/src/'
+
 export default {
   name: 'App',
   components: {
