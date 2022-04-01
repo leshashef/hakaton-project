@@ -1,8 +1,10 @@
 <template>
   <div class="background-img">
-    
+    <div>
+
+    </div> 
   </div>
-  
+   
 </template>
 
 <script>
