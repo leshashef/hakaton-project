@@ -1,10 +1,15 @@
 <template>
-  <div class="background-img">
+  <div>
     <div>
-
+       <div class="First-card">
+                
+       </div> 
+       <div class="Second-card">
+               
+       </div> 
+    
     </div> 
   </div>
-   
 </template>
 
 <script>
