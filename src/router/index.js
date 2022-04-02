@@ -6,6 +6,7 @@ import Welcomepage from "@/views/WelcomePages.vue";
 import ListTest from "@/views/ListTestPage.vue";
 import Login from "@/views/LoginPage.vue";
 import TestPage from "@/views/TestPage.vue";
+import EditTestPage from "@/views/EditTestPage.vue";
 
 import Registration from"@/views/RegistrationPage.vue";
 const routes = [
@@ -24,6 +25,11 @@ const routes = [
     path :"/test",
     name: "TestPage",
     component: TestPage,
+  },
+  {
+    path :"/edit-test",
+    name: "EditTestPage",
+    component: EditTestPage,
   },
   {
     path :"/registration",

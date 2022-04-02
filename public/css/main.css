@@ -445,3 +445,57 @@ First-Text div div{
     background: beige;
     margin-bottom: 10px;
 }
+
+.create-test{
+    text-align: start;
+    margin: 0 10%;
+    color:white
+}
+
+.create-block-name-test{
+width: 500px;
+margin-bottom: 50px;
+}
+
+.form_label-left0{
+    left:0
+}
+
+.create-block-img-test{
+    margin-bottom: 50px;
+}
+
+.grid-container-row{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: 50px;
+}
+
+.flex-blocks{
+    /* width: calc(100% + 50px); */
+    font-size: 22px;
+}
+
+.margin-20px{
+    margin: 20px 0;
+}
+
+.questname{
+ font-size: 22px;
+}
+.div-back{
+    background: #23243a;
+    padding-bottom: 100px;
+}
+.btn-send-centr{
+    margin-top: 50px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-edit{
+    margin-top: 0;
+    color:#11998e
+}
