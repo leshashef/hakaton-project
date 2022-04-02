@@ -37,9 +37,10 @@
                 Для кого подходит приложение?
             </div> 
             <div class="Photo1">
-                
+                <img class="Photograph" src="/img/img/student.png" alt="error">
             </div> 
             <div class="Photo2">
+              <img class="Photograph2" src="/img/img/IT.jpg" alt="error">
                 
             </div> 
             <div class="Photo3">

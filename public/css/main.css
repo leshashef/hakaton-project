@@ -82,6 +82,16 @@ html, body{
      left: 5%;
      top: 730px;
  }
+ .Photograph{
+  height: 280px;
+  width: 260px;
+  border-radius: 50%;
+  position: absolute;
+  top: -20%;
+  left: -15%;
+  
+ }
+
  .Photo2{
     height: 200px;
     width: 200px;
@@ -91,6 +101,15 @@ html, body{
     left: 85%;
     top: 730px;
 }
+.Photograph2{
+  height: 220px;
+  width: 220px;
+  position: absolute;
+  top: -1%;
+  left: -3%;
+  border-radius: 50%;
+  
+ }
 .Photo3{
     height: 200px;
     width: 200px;
@@ -280,7 +299,7 @@ First-Text div div{
   /* demo */
   /*\\body {
     font-family: "Poppins", sans-serif;
-   /* display: flex;*/
+   /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
