@@ -1,0 +1,20 @@
+.First-Card{
+    width: 1920px;
+    height: 693px;  
+    background-color: #545796CC;
+}
+.Second-Card{
+    width: 1920px;
+    height: 387px;
+    background-color: #C4C4C4CC;
+}
+.PhotoCard{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    top: 0%;
+    height: 400px;
+    width: 400px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}

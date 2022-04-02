@@ -1,13 +1,22 @@
 <template>
-  <div class="Background">
-     <div class="Image">
-         <img src="/img/img/Register-img.png" alt="error">
+  <div class = "registration-main">
+    <div class="registration-background-left-side">
+       <div class="registration-button-menu">
+            <div class="registration-button-menu-part1">
+            </div>
+            <div class="registration-button-menu-part2">
+            </div>
+             <div class="registration-button-menu-part3">
+            </div>
+    </div>
+    <div class="registration-background-right-side">
 
-     </div>
-     
-   </div>
-   
-   
+    </div>
+
+  </div>
+  </div>
+
+  
 </template>
 
 <script>
