@@ -4,8 +4,10 @@
          <img src="/img/img/Register-img.png" alt="error">
 
      </div>
-
+     
    </div>
+   
+   
 </template>
 
 <script>
