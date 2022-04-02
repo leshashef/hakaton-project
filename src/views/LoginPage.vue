@@ -7,8 +7,9 @@
               </div>
           </div>
           <div >
-              <div>
-                  <input type="text">
+              <div class="form__group field">
+                  <input type="text" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__label">Name</label>
               </div>
           </div>
             <div>
