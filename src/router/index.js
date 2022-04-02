@@ -10,7 +10,7 @@ import TestPage from "@/views/TestPage.vue";
 import Registration from"@/views/RegistrationPage.vue";
 const routes = [
   {
-    path :"/welcome",
+    path :"/",
     name: "Welcompage",
     component: Welcomepage,
   },
