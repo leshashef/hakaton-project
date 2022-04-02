@@ -1,0 +1,23 @@
+.registration-background-left-side
+{
+    background-color: #545796;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+.registration-main
+{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.registration-background-right-side
+{
+    background: url("/img/img/BackgroundRegistr.png") 100% 50%;
+   
+    height: 100%;
+   
+   
+}

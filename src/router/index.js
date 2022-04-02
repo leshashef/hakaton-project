@@ -6,7 +6,7 @@ import Welcomepage from "@/views/WelcomePages.vue";
 import ListTest from "@/views/ListTestPage.vue";
 import Login from "@/views/LoginPage.vue";
 import TestPage from "@/views/TestPage.vue";
-import ProfilePage from "@/views/Profile"
+import ProfilePage from "@/views/ProfilePage.vue"
 import Registration from"@/views/RegistrationPage.vue";
 const routes = [
   {
@@ -15,7 +15,7 @@ const routes = [
     component: Welcomepage,
   },
   {
-    path :"/Profile",
+    path :"/Profilepage",
     name: "ProfilePage",
     component: ProfilePage,
   },

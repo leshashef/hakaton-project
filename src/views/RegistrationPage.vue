@@ -9,14 +9,13 @@
              <div class="registration-button-menu-part3">
             </div>
     </div>
+    </div>
     <div class="registration-background-right-side">
 
     </div>
 
   </div>
-  </div>
-
-  
+ 
 </template>
 
 <script>
