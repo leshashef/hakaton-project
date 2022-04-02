@@ -1,5 +1,19 @@
 <template>
-  <div class="login-main-div">
+<div class="login-main">
+     <div class="login-main-div">
+ 
+         <div class="login-button-menu">
+            <div class="login-button-menu-part1">
+            </div>
+            <div class="login-button-menu-part2">
+            </div>
+             <div class="login-button-menu-part3">
+            </div>
+         </div>
+            
+            
+
+    </div>
       <div class="login-modal">
             <div >
               <div class="width100">
@@ -33,8 +47,6 @@
       
   </div>
 
-  <div class="footer-login">
-  </div>
 </template>
 
 <script>

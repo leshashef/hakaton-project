@@ -13,9 +13,9 @@
                     Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
                 </span>
             </div>
-            <div class="buttons-welcome">
-                <button>Регистрация</button>
-                <button>Авторизация</button>
+            <div>
+                <a class="bn31" href="/"><span class="bn31span">Регистрация</span></a>
+                <a class="bn31" href="/"><span class="bn31span">Авторизация</span></a>
             </div>
           </div>
           
@@ -25,13 +25,13 @@
             <div class="w15">Для кого подходит приложение?</div>
             <div class="w85">
               <div><div class="block-for-img">
-                
+                   <img class="FirstImage" src="/img/img/student.png" alt="error">
                 </div>Для школьников/студентов</div>
               <div><div class="block-for-img">
-                
+                <img class="SecondImage" src="/img/img/iT.JPG" alt="error">
                 </div>Для людев в IT</div>
               <div><div class="block-for-img">
-                
+                <img class="ThirdImage" src="/img/img/Everyone.JPG" alt="error">
                 </div>Для любых желающих</div>
             </div>
           </div>
@@ -74,9 +74,10 @@
                 Для кого подходит приложение?
             </div> 
             <div class="Photo1">
-                
+                <img class="Photograph" src="/img/img/student.png" alt="error">
             </div> 
             <div class="Photo2">
+              <img class="Photograph2" src="/img/img/IT.jpg" alt="error">
                 
             </div> 
             <div class="Photo3">

@@ -6,16 +6,24 @@ import Welcomepage from "@/views/WelcomePages.vue";
 import ListTest from "@/views/ListTestPage.vue";
 import Login from "@/views/LoginPage.vue";
 import TestPage from "@/views/TestPage.vue";
+<<<<<<< HEAD
 import EditTestPage from "@/views/EditTestPage.vue";
 
+=======
+import Profile from "@/views/ProfilePage.vue";
+>>>>>>> 9043e50dd64c11ec2e32da2ed0a19fd612bd4ccb
 import Registration from"@/views/RegistrationPage.vue";
 const routes = [
   {
-    path :"/welcome",
+    path :"/",
     name: "Welcompage",
     component: Welcomepage,
   },
-
+  {
+    path :"/ProfilePage",
+    name: "Profile",
+    component: Profile,
+  },
   {
     path :"/login",
     name: "LoginPage",
