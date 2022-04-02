@@ -4,16 +4,16 @@
     background-color: #545796CC;
 }
 .Second-Card{
-    width: 1921px;
+    width: 1920px;
     height: 387px;
     background-color: #C4C4C4CC;
 }
 .PhotoCard{
-    position: relative;
-    left: 48%;
+    position: absolute;
+    left: 50%;
     right: 400px;
     transform: translateX(-25%);
-    top: -30%;
+    top: 50%;
     height: 400px;
     width: 400px;
     background-color: #C4C4C4;
