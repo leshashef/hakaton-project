@@ -1,0 +1,152 @@
+.main-part-login
+{
+    background-color: rgba(84, 87, 150, 0.8);;
+    width: 1920px;
+    height: 917px;
+}
+
+.footer-login
+{
+    background-color: #C4C4C4 80%;
+    width: 1920px;
+    height: 163px;
+}
+
+.form-login
+{
+position: absolute;
+width: 629px;
+height: 665px;
+margin-left: 641px;
+margin-top: 205px;
+margin-right: 650px;
+margin-bottom: 47px;
+
+background: rgba(196, 196, 196, 0.5);
+border-radius: 58px;
+}
+
+.title-form-login
+{
+     position: absolute;
+width: 297px;
+height: 64px;
+
+font-family: 'PT Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 64px;
+margin-left: 160px;
+margin-top: 42px;
+margin-left: 172px;
+color: black;
+}
+
+.box-email
+{
+position: absolute;
+width: 341px;
+height: 77px;
+margin-left: 148px;
+margin-top:195px;
+margin-right: 140px;
+margin-bottom: 393px;
+
+border: 3px solid rgba(0, 0, 0, 0.6);
+box-sizing: border-box;
+}
+.box-email input[type='text']
+{
+    width: 341px;
+height: 77px;
+
+}
+
+.text-box-email
+{
+    position: absolute;
+width: 103px;
+height: 53px;
+
+font-family: 'PT Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 53px;
+margin-left: 21px;
+margin-top:12px;
+margin-bottom: 12px;
+color: black;
+}
+
+.box-password
+{
+    position: absolute;
+width: 341px;
+height: 77px;
+
+border: 3px solid rgba(0, 0, 0, 0.6);
+box-sizing: border-box;
+margin-left: 148px;
+margin-top:364px;
+}
+
+.text-box-password
+{
+    position: absolute;
+width: 135px;
+height: 53px;
+
+font-family: 'PT Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 53px;
+/* identical to box height */
+
+
+color: #000000;
+
+margin-left: 12px;
+margin-top: 9px;
+margin-bottom: 15px;
+}
+
+.submit-button
+{
+    position: absolute;
+width: 170px;
+height: 80px;
+
+background: rgba(207, 164, 98, 0.7);
+border-radius: 30px;
+margin-top: 761px;
+text-align: center;
+font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Gabriela, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+
+.button-menu
+{
+    position: absolute;
+width: 140px;
+height: 140px;
+
+background: rgba(196, 196, 196, 0.57);
+border-radius: 180px;
+}
+
+.part1-menu-button
+{
+    position: absolute;
+width: 67.67px;
+height: 19.83px;
+
+background: #C4C4C4;
+margin-left: 36.7px;
+margin-top: 23.3px;
+margin-right: 36.7px;
+}
