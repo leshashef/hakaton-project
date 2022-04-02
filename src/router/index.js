@@ -9,7 +9,6 @@ import TestPage from "@/views/TestPage.vue";
 import EditTestPage from "@/views/EditTestPage.vue";
 import PlayTestPage from "@/views/PlayTestPage.vue";
 
-import Profile from "@/views/ProfilePage.vue";
 import Registration from"@/views/RegistrationPage.vue";
 import ProfilePage from "@/views/ProfilePage.vue";
 const routes = [
