@@ -54,7 +54,7 @@ const routes = [
     component: About,
   },
   {
-    path: "/list-test",
+    path: "/listtest",
     name: "ListTest",
     component: ListTest,
   },

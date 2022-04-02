@@ -1,7 +1,20 @@
 <template>
-    <div>
+<div class="list-tests-page">
+
+    <div class="list-tests-background-left-side">
+
+      <div class="list-tests-title-background-left-side"> 
+       Название теста
+      </div>
 
     </div>
+
+    <div class="list-tests-background-right-side">
+
+    </div>
+
+    </div>
+    
 </template>
 
 <script>

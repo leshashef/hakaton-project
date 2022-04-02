@@ -43,10 +43,11 @@
   </div>
 
   <div class="registration-background-right-side">
-    <div class="registration-logo-language-right-side">
+    <img src="/img/img/Clogo.png" class="registration-logo-language-right-side">
+    <div class="registration-language-description-right-side">
+      Описание языка или технологии
     </div>
-
-  
+    
     </div>
    </div>
 

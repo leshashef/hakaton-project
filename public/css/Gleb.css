@@ -86,6 +86,12 @@ font-family: Palatino, URW Palladio L, serif;;
     top:2%;
 }
 
+.submit-button-registration-form
+{
+    right: 22%;
+    align-self: center;
+}
+
 
 .registration-form div div{
     position: absolute;
@@ -103,9 +109,47 @@ font-family: Palatino, URW Palladio L, serif;;
 .registration-logo-language-right-side
 {
 position: absolute;
-width: 400px;
-height: 400px;
-border-radius: 180px;
-translate:(-50%,-50%);
-background: url("/img/img/Clogo.png") 50% 50% repeat;
+width: 300px;
+height: 300px;
+left: 60%;
+
+}
+
+.registration-language-description-right-side
+{
+position: absolute;
+font-size: 20px;
+top:45%;
+width: 300px;
+height: 200px;
+left: 60%;
+}
+
+.list-tests-page
+{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.list-tests-background-left-side
+{
+    background-color: #545796;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+
+.list-tests-background-right-side
+{
+    background: url("/img/img/BackgroundRegistr.png") 100% 50%;
+   
+    height: 100%;
+}
+
+
+.list-tests-title-background-left-side
+{
+    
 }

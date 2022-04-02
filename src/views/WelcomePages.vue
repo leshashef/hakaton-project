@@ -14,8 +14,8 @@
                 </span>
             </div>
             <div>
-                <a class="bn31" href="/"><span class="bn31span">Регистрация</span></a>
-                <a class="bn31" href="/"><span class="bn31span">Авторизация</span></a>
+                <a class="bn31" href="/registration"><span class="bn31span">Регистрация</span></a>
+                <a class="bn31" href="/login"><span class="bn31span">Авторизация</span></a>
             </div>
           </div>
           
