@@ -7,10 +7,13 @@
               </div>
           </div>
           <div >
-              <div class="form__group field">
-                  <input type="text" placeholder="Name" name="name" id='name' required />
+              <div>
+                <div class="form__group field">
+                  <input class="form__field" type="text" placeholder="Name" name="name" id='name' required />
                     <label for="name" class="form__label">Name</label>
+                </div>
               </div>
+             
           </div>
             <div>
               <div>
