@@ -47,8 +47,10 @@ html, body{
  }
  .Background-text{
     position: absolute;
-    left:52%;
-    top: 18%;
+    left: 0px;
+    top: 0px;
+    left:60%;
+    top: 11%;
     width: 794px;
     height: 266px;
     background-color: #545796CC;
@@ -123,8 +125,8 @@ html, body{
     opacity:70%;
     color: rgb(158, 176, 235);
     position: absolute;
-    left:1000px;
-    top: 500px;
+    left: 55%;
+    top: 55%;
     width: 350px;
     height: 100px;
     background-color: #545796CC;
@@ -145,8 +147,8 @@ html, body{
     color: rgb(158, 176, 235);
     opacity:70%;
     position: absolute;
-    left:1450px;
-    top: 500px;
+    left: 75%;
+    top: 55%;
     width: 350px;
     height: 100px;
     background-color: #545796CC;
