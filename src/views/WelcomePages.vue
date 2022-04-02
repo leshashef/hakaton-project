@@ -2,9 +2,6 @@
   <div>
     <div>
        <div class="First-card">
-            <div>
-                 <input class="input" type="text" size="40">
-            </div>
             <div class="First-Tittle">
                 IT-Trend
             </div> 
