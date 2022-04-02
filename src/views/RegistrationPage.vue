@@ -1,7 +1,11 @@
 <template>
   <div class="Background">
-    zxczxc
-  </div>
+     <div class="Image">
+         <img src="/img/img/Register-img.png" alt="error">
+
+     </div>
+
+   </div>
 </template>
 
 <script>
