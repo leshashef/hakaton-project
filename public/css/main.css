@@ -333,7 +333,7 @@ First-Text div div{
   .footer-login
   {
       background-color: grey;
-      width: 100%;
+      width: 100% !important;
       position: relative;
       height: 90px;
     
@@ -448,4 +448,11 @@ First-Text div div{
     transform: translateX(-50%);
     background: beige;
     margin-bottom: 10px;
+}
+
+.login-main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
