@@ -1,6 +1,43 @@
 <template>
-  <div>
-    <div>
+    <div class="welcome-page">
+        <div class="w70 flex-container">
+          <div class="title-welcome"><div class="welcome-title-text">IT-Trend</div> 
+            <div class="welcome-title-img"> <img src="/img/img/emblem.png" alt="error"></div>
+          </div>
+          <div class="welcome-info">
+            <div class="img-welcome">
+              <img height="520" src="/img/img/image-welcome.png" alt="error">
+            </div>
+            <div class="welcome-text-info">
+                <span>
+                    Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
+                </span>
+            </div>
+            <div class="buttons-welcome">
+                <button>Регистрация</button>
+                <button>Авторизация</button>
+            </div>
+          </div>
+          
+        </div> 
+        <div class="w30">
+          <div class="welcome-footer">
+            <div class="w15">Для кого подходит приложение?</div>
+            <div class="w85">
+              <div><div class="block-for-img">
+                
+                </div>Для школьников/студентов</div>
+              <div><div class="block-for-img">
+                
+                </div>Для людев в IT</div>
+              <div><div class="block-for-img">
+                
+                </div>Для любых желающих</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- <div>
        <div class="First-card">
             <div class="First-Tittle">
                 IT-Trend
@@ -60,8 +97,8 @@
             
        </div> 
        
-    </div> 
-  </div>
+    </div>  -->
+
 </template>
 
 <script>
