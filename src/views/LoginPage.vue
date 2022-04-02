@@ -8,16 +8,19 @@
           </div>
           <div >
               <div>
-                <div class="form__group field">
+                <div class="form__group field-email">
                   <input class="form__field" type="text" placeholder="Name" name="name" id='name' required />
-                    <label for="name" class="form__label">Name</label>
+                    <label for="name" class="form__label">Email</label>
                 </div>
               </div>
              
           </div>
             <div>
               <div>
-                  <input type="text">
+                  <div class="form__group field-name">
+                  <input class="form__field" type="text" placeholder="Email" name="email" id='email' required />
+                    <label for="name" class="form__label">Email</label>
+                </div>
               </div>
           </div>
             <div>

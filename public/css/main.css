@@ -45,12 +45,12 @@ html, body{
  }
  .Background-text{
     position: absolute;
-    left:1000px;
-    top: 160px;
     width: 794px;
     height: 266px;
     background-color: #545796CC;
     opacity: 30%;
+    top:11%;
+    left: 60%;
     border-radius: 100px;
  }
  .First-Text{
@@ -221,7 +221,7 @@ First-Text div div{
   
   .form__field {
     font-family: inherit;
-    width: 100%;
+    width: 80%;
     border: 0;
     border-bottom: 2px solid #9b9b9b;
     outline: 0;
@@ -242,6 +242,7 @@ First-Text div div{
   
   .form__label {
     position: absolute;
+    width: 40%;
     top: 0;
     display: block;
     transition: 0.2s;
