@@ -21,12 +21,12 @@
               </div>
           </div>
           <div >
-              <div>
+            <div>
                 <div class="form__group field">
-                    <input type="input" class="form__field" placeholder="Email" name="name" id='name' required />
-                <label for="name" class="form__label">Email</label>
+                        <input type="input" class="form__field" placeholder="Email" name="name" id='name' required />
+                    <label for="name" class="form__label">Email</label>
+                </div>
             </div>
-              </div>
              
           </div>
             <div>
