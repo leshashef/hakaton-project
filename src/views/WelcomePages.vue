@@ -2,7 +2,9 @@
   <div>
     <div>
        <div class="First-card">
-           
+            <div>
+                 <input class="input" type="text" size="40">
+            </div>
             <div class="First-Tittle">
                 IT-Trend
             </div> 
@@ -19,11 +21,11 @@
                    Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
                 </div>
             
-              <button class="First-button">
+              <button class="Login-button">
                 <h1>Вход</h1>
 
               </button>
-              <button class="Second-button">
+              <button class="Register-button">
                 <h1>Регистрация</h1>
 
               </button>
@@ -55,6 +57,7 @@
             <div class="Photo-text3">
                 <div>Для любых желающих</div>
             </div> 
+            
 
             
        </div> 

@@ -114,7 +114,7 @@ html, body{
     font-size: 20px;
     color:rgb(87, 73, 73);
 }
-.First-button {
+.Login-button {
     opacity:70%;
     color: rgb(158, 176, 235);
     position: absolute;
@@ -130,13 +130,13 @@ html, body{
     
     
 }
-.First-button:hover {
+.Login-button:hover {
     transform: translateY(-7px);
     background-color: #00abfa; /* Green */
     color: white;
     box-shadow: 10px 15px 20px rgba(27, 183, 245, 0.4)
 }
-.Second-button {
+.Register-button {
     color: rgb(158, 176, 235);
     opacity:70%;
     position: absolute;
@@ -150,9 +150,20 @@ html, body{
     transition-duration: 0.4s;
     border: 0px;
 }
-.Second-button:hover {
+.Register-button:hover {
     transform: translateY(-7px);
     background-color: #00abfa; /* Green */
     color: white;
     box-shadow: 10px 15px 20px rgba(27, 183, 245, 0.4)
+}
+.input{
+    width: 350px;
+    background-color: rgb(203, 235, 235);
+    height: 40px;
+    position:absolute;
+    left: 0px;
+    border: 1px solid black;
+     border-radius: 15px;
+
+
 }
