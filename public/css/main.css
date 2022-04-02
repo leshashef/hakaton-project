@@ -335,6 +335,7 @@ First-Text div div{
       background-color: grey;
       width: 100% !important;
       position: relative;
+      white-space: nowrap;
       height: 90px;
     
   }
@@ -455,4 +456,70 @@ First-Text div div{
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+
+.footer-circle
+{
+    position: relative;
+    display: inline-block;
+width: 130px;
+height: 130px;
+
+
+
+
+background: #A14F35;
+border: 11px solid rgba(165, 159, 159, 0.8);
+box-sizing: border-box;
+border-radius: 180px;
+}
+
+
+.login-button-menu
+{
+    border-radius: 180px;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+
+background: rgba(196, 196, 196,1);
+}
+
+.login-button-menu-part1
+{
+    
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 60px;
+height: 14px;
+
+background: #312a2a;
+}
+
+.login-button-menu-part2
+{
+    position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%,-25%);
+width: 60px;
+height: 14px;
+
+background: #312a2a;
+}
+
+.login-button-menu-part3
+{
+    position: absolute;
+    top: 75%;
+left: 50%;
+transform: translate(-50%,-75%);
+width: 60px;
+height: 14px;
+
+background: #312a2a;
 }
