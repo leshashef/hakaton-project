@@ -12,11 +12,11 @@
                 <img src="/img/img/emblem.png" alt="error">
             </div>
               <div class="Background-text">
-                
-              </div>
-              <div class="First-Text">
+                <div class="First-Text">
                    Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
                 </div>
+              </div>
+              
             
               <button class="Login-button">
                 <h1>Вход</h1>

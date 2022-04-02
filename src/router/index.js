@@ -7,6 +7,7 @@ import ListTest from "@/views/ListTestPage.vue";
 import Login from "@/views/LoginPage.vue";
 import TestPage from "@/views/TestPage.vue";
 
+import Registration from"@/views/RegistrationPage.vue";
 const routes = [
   {
     path :"/welcome",
@@ -20,10 +21,18 @@ const routes = [
     component: Login,
   },
   {
+<<<<<<< HEAD
     path :"/test",
     name: "TestPage",
     component: TestPage,
   },
+=======
+    path :"/registration",
+    name: "RegistrationPage",
+    component: Registration,
+  },
+
+>>>>>>> ccad7f99ad7463f1c5c3561d17c7700a5370857d
   {
     path: "/",
     name: "HomePage",

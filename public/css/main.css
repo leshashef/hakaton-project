@@ -10,9 +10,13 @@ html, body{
 }
 
 .First-card{
-   width: 1920px;
-   height: 751px;
-   background-color: #545796CC;
+   /*width: 1920px;
+   height: 751px;*/
+   background-color: rgba(84, 87, 150, 0.8);
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
    
 }
 .Second-card{
@@ -30,11 +34,12 @@ html, body{
      
  }
  .First-image{
-     position: absolute;
-     left:0px;
-     top: 150px;
+     position: relative;
+     left:0%;
+     top: 10%;
      width: 682px;
      height: 604px;
+    
  }
  .emblem{
     position: absolute;
@@ -44,22 +49,21 @@ html, body{
     height: 105px;
  }
  .Background-text{
-    position: absolute;
-    left:1000px;
-    top: 160px;
+    position: relative;
     width: 794px;
     height: 266px;
     background-color: #545796CC;
     opacity: 30%;
     border-radius: 100px;
+    left: 55%;
+    top: 10%;
  }
  .First-Text{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: absolute;
-    left:1100px;
-    top: 185px;
+    position: sticky;
     font-size: 45px;
     color:rgb(202, 202, 202);
+    left: 50%;
     
  }
  .Second-Text{
@@ -159,17 +163,8 @@ html, body{
     color: white;
     box-shadow: 10px 15px 20px rgba(27, 183, 245, 0.4)
 }
-.input{
-    width: 350px;
-    background-color: rgb(203, 235, 235);
-    height: 40px;
-    position:absolute;
-    left: 0px;
-    border: 1px solid black;
-     border-radius: 15px;
 
 
-}
 
 .login-main-div{
     background-color: rgba(84, 87, 150, 0.8);
@@ -189,11 +184,19 @@ html, body{
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: ani 2.5s forwards;
 }
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 .login-modal div{
     flex-basis: 25%;
     position: relative;
+    top:5%;
 }
 
 First-Text div div{
@@ -205,6 +208,7 @@ First-Text div div{
 
 .text-login{
     font-size: 40px;
+    font-family: Palatino, URW Palladio L, serif;
 }
 
 .width100{
@@ -220,8 +224,8 @@ First-Text div div{
   }
   
   .form__field {
-    font-family: inherit;
-    width: 100%;
+    font-family: Palatino, URW Palladio L, serif;
+    width: 80%;
     border: 0;
     border-bottom: 2px solid #9b9b9b;
     outline: 0;
@@ -235,18 +239,20 @@ First-Text div div{
     color: transparent;
   }
   .form__field:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
+    font-size: 25px;
     cursor: text;
     top: 20px;
   }
   
   .form__label {
     position: absolute;
+    font-family: Palatino, URW Palladio L, serif;
     top: 0;
+    left: 10%;
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #9b9b9b;
+    color: #448f59;
   }
   
   .form__field:focus {
@@ -266,17 +272,65 @@ First-Text div div{
     font-weight: 700;
   }
   
+  /* reset input */
   .form__field:required, .form__field:invalid {
     box-shadow: none;
   }
   
-  body {
+  /* demo */
+  /*body {
     font-family: "Poppins", sans-serif;
-    display: flex;
+   /* display: flex;*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-size: 1.5rem;
     background-color: #222222;
+  }*/
+
+
+
+  .bn31 {
+    background-image: linear-gradient(to right, #89bd9b 0%, #179b56 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #63f2a6;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+    left: 25%;
+  }
+  
+  .bn31:hover {
+    color: #fff;
+  }
+  
+  .bn31 .bn31span {
+    align-items: center;
+    background: rgb(11 146 90);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .bn31:hover .bn31span {
+    background: transparent;
+  }
+
+  .footer-login
+  {
+      background-color: grey;
+      width: 100%;
+      position: relative;
+      height: 90px;
+    
   }
