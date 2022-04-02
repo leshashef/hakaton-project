@@ -49,14 +49,14 @@ html, body{
     height: 105px;
  }
  .Background-text{
-    position: relative;
+    position: absolute;
     width: 794px;
     height: 266px;
     background-color: #545796CC;
     opacity: 30%;
     border-radius: 100px;
-    left: 55%;
-    top: 10%;
+    left: 52%;
+    top: 25%;
  }
  .First-Text{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -67,9 +67,9 @@ html, body{
     
  }
  .Second-Text{
-    position: static;
-    left: 50%;
-    top: 800px;
+    position: absolute;
+    left: 32%;
+    top: 670px;
     font-size: 45px;
     color:rgb(83, 83, 83);
  }
@@ -79,8 +79,8 @@ html, body{
      border-radius: 50%;
      position: absolute;
      background-color: rgb(192, 117, 47);
-     left: 50px;
-     top: 810px;
+     left: 5%;
+     top: 85%;
  }
  .Photo2{
     height: 200px;
@@ -88,8 +88,8 @@ html, body{
     border-radius: 50%;
     position: absolute;
     background-color: rgb(192, 117, 47);
-    left: 1670px;
-     top: 810px;
+    left: 85%;
+    top: 730px;
 }
 .Photo3{
     height: 200px;
@@ -97,27 +97,27 @@ html, body{
     border-radius: 50%;
     position: absolute;
     background-color: rgb(192, 117, 47);
-    left: 860px;
-     top: 810px;
+    left: 45%;
+    top: 730px;
 }
 .Photo-text1{
     position: absolute;
-    left: 25px;
-    top:  1020px;
+    left: 4%;
+    top: 950px;
     font-size: 20px;
     color:rgb(87, 73, 73);
 }
 .Photo-text2{
     position: absolute;
-    left: 880px;
-    top:  1020px;
+    left: 87%;
+    top: 950px;
     font-size: 20px;
     color:rgb(87, 73, 73);
 }
 .Photo-text3{
     position: absolute;
-    left: 1670px;
-    top:  1020px;
+    left: 45%;
+    top: 950px;
     font-size: 20px;
     color:rgb(87, 73, 73);
 }
@@ -125,8 +125,8 @@ html, body{
     opacity:70%;
     color: rgb(158, 176, 235);
     position: absolute;
-    left:1000px;
-    top: 500px;
+    left:52%;
+    top: 75%;
     width: 350px;
     height: 100px;
     background-color: #545796CC;
@@ -147,8 +147,8 @@ html, body{
     color: rgb(158, 176, 235);
     opacity:70%;
     position: absolute;
-    left:1450px;
-    top: 500px;
+    left:75%;
+    top: 75%;
     width: 350px;
     height: 100px;
     background-color: #545796CC;
@@ -278,7 +278,7 @@ First-Text div div{
   }
   
   /* demo */
-  /*body {
+  /*\\body {
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
