@@ -1,7 +1,29 @@
 <template>
-  <div class="main-part-login">
-
-      <div class="button-menu">
+  <div class="login-main-div">
+      <div class="login-modal">
+            <div >
+              <div class="width100">
+                  <span class="text-login">Авторизация</span>
+              </div>
+          </div>
+          <div >
+              <div>
+                  <input type="text">
+              </div>
+          </div>
+            <div>
+              <div>
+                  <input type="text">
+              </div>
+          </div>
+            <div>
+                <div>
+                    <button>Отправить</button>
+                </div>
+              
+          </div>
+      </div>
+      <!-- <div class="button-menu">
           <div class="part1-menu-button">
           </div>
       </div>
@@ -34,7 +56,7 @@
     
 
   <div class="footer-login">
- 
+  -->
   </div>
 </template>
 
