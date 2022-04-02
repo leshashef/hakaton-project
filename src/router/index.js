@@ -11,6 +11,7 @@ import PlayTestPage from "@/views/PlayTestPage.vue";
 
 import Profile from "@/views/ProfilePage.vue";
 import Registration from"@/views/RegistrationPage.vue";
+import ProfilePage from "@/views/ProfilePage.vue";
 const routes = [
   {
     path :"/",
@@ -18,10 +19,11 @@ const routes = [
     component: Welcomepage,
   },
   {
-    path :"/ProfilePage",
-    name: "Profile",
-    component: Profile,
+    path :"/Profilepage",
+    name: "ProfilePage",
+    component: ProfilePage,
   },
+
   {
     path :"/login",
     name: "LoginPage",
@@ -33,6 +35,7 @@ const routes = [
     component: PlayTestPage,
   },
   {
+  
     path :"/test",
     name: "TestPage",
     component: TestPage,
@@ -59,7 +62,7 @@ const routes = [
     component: About,
   },
   {
-    path: "/list-test",
+    path: "/listtest",
     name: "ListTest",
     component: ListTest,
   },
