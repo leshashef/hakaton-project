@@ -127,29 +127,128 @@ left: 60%;
 
 .list-tests-page
 {
+    display: flex;
+    flex-direction: column;
     margin: 0;
+
     height: 100%;
     width: 100%;
+
+    flex-wrap: wrap;
+
+    opacity: 0;
+    animation: ani 2.5s forwards;
 }
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 .list-tests-background-left-side
 {
     background-color: #545796;
     height: 100%;
     width: 50%;
-    float: left;
+   
 }
 
 
 .list-tests-background-right-side
 {
     background: url("/img/img/BackgroundRegistr.png") 100% 50%;
-   
+
+   width: 50%;
+
     height: 100%;
 }
 
+.list-tests-title-left-side
+{
+    font-size: 40px;
+    color: white;
+    font-family: Gabriela;
+
+    opacity: 0;
+    animation: ani 4s forwards;
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 .list-tests-title-background-left-side
+{   position: relative;
+    font-family: Gravitas One;
+    font-size: 60px;
+    top:25%;
+    left: 5%;
+    color: white;
+    transform: translateX(-150%);
+  animation: titleani 2s forwards;
+}
+@keyframes titleani {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateY(0);}
+  }
+
+.list-tests-footer
 {
+    position: relative;
+    width: 100%;
+    height:30%;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
     
+}
+
+
+.list-tests-img-test
+{
+    width: 150px;
+    height: 150px;
+}
+
+.list-tests-test
+{
+    position: relative;
+    margin-top: 10px;
+    left: 7%;
+    transform: translateY(150%);
+    animation: testanim 2s forwards;
+}
+
+@keyframes testanim {
+    0% {transform: translateY(150%);}
+    100% {transform: translateY(0);}
+  }
+
+.list-tests-choise-test-title-left-side
+{
+    position: absolute;
+    font-family: Gravitas One;
+    font-size: 30px;
+    top:95%;
+    color: white;
+}
+
+.list-test-title-who-made-test
+{
+    display: inline-block;
+   
+    
+}
+
+.list-test-sign-who-made-test
+{
+display: inline-block;
+width: 21.02px;
+height: 18.46px;
+border-radius: 180px;
+margin-right: 5%;
+
+
+background: #15D334;
+
 }
