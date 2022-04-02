@@ -33,8 +33,7 @@
       
   </div>
 
-  <div class="footer-login">
-  </div>
+
 </template>
 
 <script>
