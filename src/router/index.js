@@ -8,7 +8,7 @@ import Login from "@/views/LoginPage.vue";
 import Registration from"@/views/RegistrationPage.vue";
 const routes = [
   {
-    path :"/welcome",
+    path :"/",
     name: "Welcompage",
     component: Welcomepage,
   },
