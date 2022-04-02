@@ -1,6 +1,6 @@
 <template>
-  <div class="Backgroud">
-
+  <div class="Background">
+    zxczxc
   </div>
 </template>
 

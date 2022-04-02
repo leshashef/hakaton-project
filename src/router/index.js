@@ -5,7 +5,7 @@ import NotFound from "@/views/NotFoundPage.vue";
 import Welcomepage from "@/views/WelcomePages.vue";
 import ListTest from "@/views/ListTestPage.vue";
 import Login from "@/views/LoginPage.vue";
-
+import Registration from"@/views/RegistrationPage.vue";
 const routes = [
   {
     path :"/welcome",
@@ -17,6 +17,11 @@ const routes = [
     path :"/login",
     name: "LoginPage",
     component: Login,
+  },
+  {
+    path :"/registration",
+    name: "RegistrationPage",
+    component: Registration,
   },
 
   {
