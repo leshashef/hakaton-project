@@ -5,6 +5,7 @@ import NotFound from "@/views/NotFoundPage.vue";
 import Welcomepage from "@/views/WelcomePages.vue";
 import ListTest from "@/views/ListTestPage.vue";
 import Login from "@/views/LoginPage.vue";
+import TestPage from "@/views/TestPage.vue";
 
 const routes = [
   {
@@ -18,7 +19,11 @@ const routes = [
     name: "LoginPage",
     component: Login,
   },
-
+  {
+    path :"/test",
+    name: "TestPage",
+    component: TestPage,
+  },
   {
     path: "/",
     name: "HomePage",
@@ -35,10 +40,10 @@ const routes = [
     component: ListTest,
   },
 
-    {
-      path: "/:catchAll(.*)",
-      component: NotFound,
-    },
+  {
+    path: "/:catchAll(.*)",
+    component: NotFound,
+  },
    
   
 ];
