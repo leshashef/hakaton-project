@@ -10,9 +10,13 @@ html, body{
 }
 
 .First-card{
-   width: 1920px;
-   height: 751px;
-   background-color: #545796CC;
+   /*width: 1920px;
+   height: 751px;*/
+   background-color: rgba(84, 87, 150, 0.8);
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
    
 }
 .Second-card{
@@ -35,6 +39,7 @@ html, body{
      top: 150px;
      width: 682px;
      height: 604px;
+    
  }
  .emblem{
     position: absolute;
@@ -44,14 +49,14 @@ html, body{
     height: 105px;
  }
  .Background-text{
-    position: absolute;
+    position: relative;
     width: 794px;
     height: 266px;
     background-color: #545796CC;
     opacity: 30%;
-    top:11%;
-    left: 60%;
     border-radius: 100px;
+    left: 55%;
+    top: 10%;
  }
  .First-Text{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -242,8 +247,8 @@ First-Text div div{
   
   .form__label {
     position: absolute;
-    width: 40%;
     top: 0;
+    left: 10%;
     display: block;
     transition: 0.2s;
     font-size: 1rem;
@@ -267,10 +272,12 @@ First-Text div div{
     font-weight: 700;
   }
   
+  /* reset input */
   .form__field:required, .form__field:invalid {
     box-shadow: none;
   }
   
+  /* demo */
   body {
     font-family: "Poppins", sans-serif;
     display: flex;
