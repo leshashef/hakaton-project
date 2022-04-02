@@ -9,7 +9,7 @@
           <div >
               <div>
                 <div class="form__group field">
-                    <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                    <input type="input" class="form__field" placeholder="Email" name="name" id='name' required />
                 <label for="name" class="form__label">Email</label>
             </div>
               </div>
@@ -18,14 +18,14 @@
             <div>
               <div>
                   <div class="form__group field-name">
-                  <input class="form__field" type="text" placeholder="Email" name="email" id='email' required />
+                  <input class="form__field" type="password" placeholder="Пароль" name="email" id='email' required />
                     <label for="name" class="form__label">Пароль</label>
                 </div>
               </div>
           </div>
             <div>
                 <div>
-                    <button>Отправить</button>
+                    <a class="bn31" href="/"><span class="bn31span">Войти</span></a>
                 </div>
               
           </div>
@@ -64,6 +64,9 @@
 
   <div class="footer-login">
   -->
+  </div>
+
+  <div class="footer-login">
   </div>
 </template>
 

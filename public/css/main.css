@@ -194,11 +194,19 @@ html, body{
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: ani 2.5s forwards;
 }
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 .login-modal div{
     flex-basis: 25%;
     position: relative;
+    top:5%;
 }
 
 First-Text div div{
@@ -210,6 +218,7 @@ First-Text div div{
 
 .text-login{
     font-size: 40px;
+    font-family: Palatino, URW Palladio L, serif;
 }
 
 .width100{
@@ -225,7 +234,7 @@ First-Text div div{
   }
   
   .form__field {
-    font-family: inherit;
+    font-family: Palatino, URW Palladio L, serif;
     width: 80%;
     border: 0;
     border-bottom: 2px solid #9b9b9b;
@@ -240,19 +249,20 @@ First-Text div div{
     color: transparent;
   }
   .form__field:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
+    font-size: 25px;
     cursor: text;
     top: 20px;
   }
   
   .form__label {
     position: absolute;
+    font-family: Palatino, URW Palladio L, serif;
     top: 0;
     left: 10%;
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #9b9b9b;
+    color: #448f59;
   }
   
   .form__field:focus {
@@ -287,4 +297,48 @@ First-Text div div{
     min-height: 100vh;
     font-size: 1.5rem;
     background-color: #222222;
+  }
+
+
+
+  .bn31 {
+    background-image: linear-gradient(to right, #89bd9b 0%, #179b56 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #63f2a6;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+    left: 25%;
+  }
+  
+  .bn31:hover {
+    color: #fff;
+  }
+  
+  .bn31 .bn31span {
+    align-items: center;
+    background: rgb(11 146 90);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .bn31:hover .bn31span {
+    background: transparent;
+  }
+
+  .footer-login
+  {
+      background-color: grey;
+      /**width: 100%;*/
+      position: relative;
   }
