@@ -98,13 +98,18 @@ export default {
             console.log(this.nameTest);
              console.log(this.result);
              console.log(this.quest);
+             
+            for(let el of this.quest){
+                el.json = JSON.stringify(el.json);
+                el.lastAnswer = "GGWP";
+            }
 
              let objSend = {
                  UserId:1,
-                 NameTest:this.nameTest,
+                 TestName:this.nameTest,
                  ImgTest:this.img,
-                 Result:this.result,
-                 Quest:this.quest,
+                 Results:this.result,
+                 Quests:this.quest,
              }
             objSend = JSON.stringify(objSend);
             console.log(objSend);
@@ -207,7 +212,5 @@ export default {
 </script>
 
 <style>
-    #app{
-        background: #23243a;
-    }
+
 </style>
