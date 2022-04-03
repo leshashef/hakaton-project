@@ -426,6 +426,7 @@ background: #15D334;
     height: 80%;
     display: flex;
     flex-direction: column;
+    bottom: 40px;
 }
 
 .punkt-menu
@@ -433,6 +434,7 @@ background: #15D334;
     font-family: Gabriela;
     font-size: 25px;
     margin-top: 60px;
+    text-decoration: none;
 }
 
 .button-menu
@@ -496,4 +498,171 @@ z-index: 2;
 
   .font_size_16{
       font-size: 16;
+  }
+
+  .div_button
+  {
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .link-router
+  {
+    text-decoration: none;
+    color: rgb(11, 116, 25);
+  }
+
+  .exit-profile-button
+  {
+      margin-top: 35px;
+  }
+
+  .button-exit
+  {
+    background-image: linear-gradient(to right, #89bd9b 0%, #179b56 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    grid-column: 2;
+    grid-row: 3/4;
+      display: flex;    
+      justify-content: space-around;
+      padding: 0 80px;
+    color: #63f2a6;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .button-exit:hover
+  {
+    color: #fff;
+  }
+
+  .button-exit .button-exitspan
+  {
+    align-items: center;
+    background: rgb(11 146 90);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .button-exit:hover .button-exitspan
+  {
+    background: transparent;
+  }
+
+  .profile-page
+  {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .profile-main-part
+  {
+      width: 100%;
+      height: 66%;
+      background-color:rgba(84, 87, 150, 0.8) ;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .profile-footer-part
+  {
+    width: 100%;
+    height: 34%;
+    background-color:grey;
+  }
+
+  .profile-email-telephone
+  {
+      height: 100%;
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      font-size: 30px;
+      font-family: PT Serif;
+      margin-left: 50px;
+  }
+  .profile-photo-fio
+  {
+      margin-top: 20px;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .profile-id-counter
+  {
+    height: 100%;
+    width: 34%;
+  }
+
+  .profile-text-email
+  {
+    margin-top: 30px;
+  }
+  .profile-text-telephone
+  {
+    margin-top: 80px;
+  }
+
+  .profile-photo
+  {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 180px;
+  }
+
+  .profile-fio
+  {
+      width: 100%;
+      margin-top: 30px;
+      font-size: 25px;
+      font-family: PT Serif;
+  }
+
+
+  .profile-id-counter
+  {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      font-size: 30px;
+      font-family: PT Serif;
+      margin-right: 50px;
+  }
+
+  .profile-counter
+  {
+    margin-top: 30px;
+  }
+
+  .profile-id
+  {
+    margin-top: 80px;
+    
   }

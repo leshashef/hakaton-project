@@ -16,20 +16,31 @@
           </div>
       <div class="punkti-menu">
       <div class="punkt-menu">
-          Профиль
+        <router-link to ="/profilepage"  class="link-router">  Профиль
+        </router-link>
       </div>
-      <div class="punkt-menu">
+      <div class="punkt-menu" >
           Новости
       </div>
       <div class="punkt-menu">
-          Редактор тестов
+          <router-link to = "/edit-test"  class="link-router">Редактор тестов
+          </router-link>
       </div>
       <div class="punkt-menu">
-          Список тестов
+         <router-link to="/listtest"  class="link-router"> Список тестов
+         </router-link>
       </div>
       <div class="punkt-menu">
           О приложении
       </div>
+      <div class="exit-profile-button">
+        <a class="button-exit">
+      <span class="button-exitspan">
+        Выход
+      </span>
+       </a>
+    </div>
+    
     </div>
   </div>
 
