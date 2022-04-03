@@ -72,12 +72,14 @@
             </div>
             <div class="btn-send-centr"><button v-on:click="Send()">Сохранить тест</button></div>
         </div>
-        
+        <nav-bar/>
     </div>
 </template>
 
 <script>
+import NavBar from '../components/NavBar.vue';
 export default {
+     components: { NavBar },
     data(){
         return{
              nameTest:null,
@@ -91,9 +93,29 @@ export default {
        
     },
     created(){
-
+        this.GetLogin();
+        
     },
     methods:{
+      async  GetLogin(){
+            let response = await fetch("https://localhost:7101/api/CheckLogin",
+                {
+                    method: 'GET',
+                    mode: 'cors',
+                    credentials: 'include'
+                }    
+            );
+            if (response.ok) { // если HTTP-статус в диапазоне 200-299
+                    // получаем тело ответа (см. про этот метод ниже)
+                let json = await response.json();
+                console.log(json);
+                if(json.redirect != undefined){
+                    this.$router.push(json.redirect);
+                }
+                } else {
+                alert("Ошибка HTTP: " + response.status);
+            }
+        },
        async Send(){
             console.log(this.nameTest);
              console.log(this.result);

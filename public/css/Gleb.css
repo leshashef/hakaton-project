@@ -88,7 +88,7 @@ font-family: Palatino, URW Palladio L, serif;;
 
 .submit-button-registration-form
 {
-    right: 15%;
+    /* right: 15%; */
     align-self: center;
 }
 
@@ -214,11 +214,11 @@ left: 60%;
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    left: 7%;
+    left: 5%;
     transform: translateY(150%);
     animation: testanim 2s forwards;
-    height: 100%;
-    width: 100%;
+    width: 90%;
+    overflow: hidden;
 }
 
 @keyframes testanim {
@@ -341,8 +341,10 @@ background: #15D334;
 
 .list-tests
 {
+    position: relative;
     display: flex;
     flex-direction: row;
+    transition: all 1s;
 }
 
 .div-who-made
@@ -353,12 +355,21 @@ background: #15D334;
 
 .test
 {
-    margin-left: 50px;
+    margin-left: 70px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    user-select: none;
+    background: #f0f8ff00;
+    transition: all 0.3s;
+}
+.test:hover{
+    background: #f0f8ff24;
 }
 
 .bar-menu
 {
     position: fixed;
+    top:0;
     height: 100%;
 }
 
@@ -370,6 +381,7 @@ background: #15D334;
     background-color:grey;
     transform: translate(-300px,0px);
     z-index: 1;
+    transition: all 1s
 }
 
 .punkti-menu
@@ -432,6 +444,7 @@ background-color: grey;
 border-radius: 180px;
 margin-left: 8px;
 margin-top: 5px;
+z-index: 2;
 }
 
 .button-polosi
@@ -457,9 +470,30 @@ margin-top: 5px;
 
 .openbar 
 {
-    animation: openBar 1s forwards;
-   
+    /* animation: openBar 1s forwards; */
+    transform: translate(0px,0px);
+    transition: all 1s;
 }@keyframes openBar {
     0% {transform: translate(-300px,0px);}
     100% {transform: translate(0px,0px);}
+  }
+  .hidd{
+    height: 140px;
+  }
+
+  .arrow-button{
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background: #f0f8ff2e;
+    transition: all 0.3s;
+  }
+
+  .arrow-button:hover{
+    font-size: 22px;
+    background: #f0f8ff75;
+  }
+
+  .font_size_16{
+      font-size: 16;
   }

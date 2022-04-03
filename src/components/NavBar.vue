@@ -1,8 +1,11 @@
 <template>
 
 <div class="bar-menu">
-
-  <div class="background-menu" :class="{'openbar': active}">
+   
+  <div class="background-menu" :class="{'openbar': active}"> 
+    <div class="hidd">
+        
+    </div>
       <div class="photo-fio">
             <div class ="photo-menu">
                  <img/>
@@ -62,7 +65,7 @@ export default {
     {
            openBarMenu:function()
            {
-               this.active = true;
+               this.active = !this.active;
                
            }
     },

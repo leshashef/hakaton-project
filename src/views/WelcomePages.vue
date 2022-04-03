@@ -37,7 +37,6 @@
           </div>
         </div>
 
-        <nav-bar/>
     </div>
     <!-- <div>
        <div class="First-card">
@@ -104,9 +103,9 @@
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue';
+
 export default {
-  components: { NavBar },
+
 
 }
 </script>

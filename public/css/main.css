@@ -324,7 +324,7 @@ First-Text div div{
     text-decoration: none;
     width: 7em;
     z-index: 2;
-    left: 30%;
+    left: 0;
   }
   
   .bn31:hover {
@@ -451,7 +451,7 @@ First-Text div div{
   text-decoration: none;
   width: 7em;
   z-index: 2;
-  left: 25%;
+  left: 0;
 }
 
 .bn31:hover {

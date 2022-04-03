@@ -22,11 +22,14 @@
             <div>Такого теста не существует</div>
             <div></div>
         </div>
+        <nav-bar/>
     </div>
 </template>
 
 <script>
+import NavBar from '../components/NavBar.vue';
 export default {
+     components: { NavBar },
     data(){
         return{
             TestUndefined: false,
