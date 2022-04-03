@@ -450,7 +450,7 @@ First-Text div div{
   position: relative;
   text-decoration: none;
   width: 7em;
-  z-index: 2;
+  z-index: 0;
   left: 0;
 }
 
@@ -513,7 +513,7 @@ First-Text div div{
     text-align: start;
     padding: 0 10%;
     color:white;
-    background: #23243a;
+   
 }
 
 .create-block-name-test{
@@ -526,6 +526,7 @@ margin-bottom: 50px;
 }
 
 .create-block-img-test{
+    
     margin-bottom: 50px;
 }
 
@@ -548,7 +549,7 @@ margin-bottom: 50px;
  font-size: 22px;
 }
 .div-back{
-    background: #23243a;
+    background: linear-gradient(rgb(64, 64, 139),rgb(41, 100, 14));
     height: 100%;
 }
 .btn-send-centr{
@@ -562,7 +563,9 @@ margin-bottom: 50px;
 
 .title-edit{
     margin-top: 0;
+    font: optional;
     color:#11998e;
+    font-family: PT Serif;
 }
 .FirstImage{
   position: absolute;
