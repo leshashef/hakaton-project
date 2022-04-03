@@ -378,7 +378,6 @@ background: #15D334;
     position: absolute;
     height: 100%;
     width: 250px;
-    background-color:grey;
     transform: translate(-300px,0px);
     z-index: 1;
     transition: all 1s
@@ -592,7 +591,7 @@ z-index: 2;
 
   .profile-email-telephone
   {
-      height: 100%;
+      height: 90%;
       width: 33%;
       display: flex;
       flex-direction: column;
@@ -604,7 +603,7 @@ z-index: 2;
   .profile-photo-fio
   {
       margin-top: 20px;
-    height: 100%;
+    height: 90%;
     width: 33%;
     display: flex;
     flex-direction: column;
@@ -647,7 +646,7 @@ z-index: 2;
 
   .profile-id-counter
   {
-      height: 100%;
+      height: 90%;
       display: flex;
       flex-direction: column;
       margin-top: 50px;
@@ -665,4 +664,42 @@ z-index: 2;
   {
     margin-top: 80px;
     
+  }
+
+  .profile-title-footer-part
+  {
+        text-align: left;
+        font-size: 25px;
+        font-family: PT Serif;
+  }
+
+  .profile-footer-list-url
+  {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+
+  }
+
+  .profile-footer-url
+  {
+     font-size: 25px;
+    width: 25%;
+    font-family: PT Serif;
+    
+  }
+
+  .url
+  {
+    text-decoration: none;
+    color: rgb(11, 116, 25);
+  }
+  .profile-footer-part
+  {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
   }

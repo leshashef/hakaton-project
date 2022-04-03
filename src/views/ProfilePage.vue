@@ -36,17 +36,49 @@
               </div>
 
           </div>
-      </div>
+
+        
+          
+           </div>
+            
+
+     
+
 
       <div class="profile-footer-part">
+            <div class="profile-title-footer-part">
+            
+                    Пункты меню:
+          
+      </div>
+          <div class="profile-footer-list-url">
+               <div class="profile-footer-url" >
+                 <router-link to="/" class="url"> Главная страница </router-link>
+               </div>
+               <div class="profile-footer-url">
+                 <router-link to="/listtest" class="url"> Список тестов </router-link>
+               </div>
+               <div class="profile-footer-url">
+                 <router-link to="/edit-test" class="url"> Создание тестов </router-link>
+               </div>
+               <div class="profile-footer-url">
+                 <router-link to="/about" class="url"> О приложении </router-link>
+               </div>
+          </div>
 
       </div>
+
 
   </div>
 </template>
 
 <script>
+
+
+
 export default {
+
+  
 
 }
 </script>
