@@ -88,7 +88,10 @@ export default {
                 for(let el of item.changeRes){
                     console.log(counter);
                     console.log(el);
-                     counter[el.changeRes].value -= -el.value;
+                    if(el.value != null){
+                        counter[el.changeRes].value -= -el.value;
+                    }
+                     
                 }
                 
                  

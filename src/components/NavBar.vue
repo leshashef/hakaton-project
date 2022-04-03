@@ -7,11 +7,11 @@
         
     </div>
       <div class="photo-fio">
-            <div class ="photo-menu">
-                 <img/>
-            </div>
+            <!-- <div class ="photo-menu">
+                 <img width="50" height="50" :src="'data:image/jpeg;base64,'+photo"/>
+            </div> -->
         <div class="fio-menu">
-          ФИО
+          {{name}}
         </div>
           </div>
       <div class="punkti-menu">
@@ -69,9 +69,16 @@ export default {
     {
         return{
             active:false,
+                name:null,
+      photo:null,
               }
     },
-
+    created(){
+             let prof = localStorage.getItem('user');
+      prof = JSON.parse(prof);
+      this.photo = prof.imgProfile;
+      this.name = prof.userName;
+    },
     methods:
     {
      async exitAcc(){

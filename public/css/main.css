@@ -650,10 +650,9 @@ margin-bottom: 50px;
     .registration-login-url-button{
           position: absolute;
         bottom: 0px;
-        transform: translateX(-50%);
-        left: 257.5px;
+        left: 0;
         margin-bottom: 10px;
-
+        margin-left: 10px;
     }
 
     .log-to-reg{

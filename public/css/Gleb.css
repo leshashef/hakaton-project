@@ -636,7 +636,8 @@ z-index: 2;
     flex-direction: column;
     width: fit-content;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    border-radius: 180px;
   }
 
   .profile-id-counter
@@ -647,6 +648,7 @@ z-index: 2;
 
   .profile-text-email
   {
+      
     margin-top: 30px;
   }
   .profile-input-email
@@ -660,6 +662,7 @@ z-index: 2;
     height: 300px;
     background-color: white;
     border-radius: 180px;
+    margin: auto;
   }
 
   .profile-fio
@@ -719,7 +722,16 @@ z-index: 2;
     transition: 0.5s; 
      text-align: center; 
      margin-left: 25px;
+     display: flex;
+     flex-direction: column;
     
+  }
+
+  .icon-footer-url
+  {
+      height: 50px;
+      width: 50px;
+      align-self: center;
   }
 
   .profile-footer-url:hover
@@ -745,4 +757,26 @@ z-index: 2;
       width: 100%;
       display: flex;
       flex-direction: column;
+  }
+
+  .profile-email-icon
+  {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+  }
+
+  .profile-id-icon
+  {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+  }
+  
+  .profile-photo-img
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 180px;
   }
