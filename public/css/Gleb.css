@@ -649,7 +649,7 @@ z-index: 2;
   {
     margin-top: 30px;
   }
-  .profile-text-telephone
+  .profile-input-email
   {
     margin-top: 80px;
   }
@@ -682,14 +682,14 @@ z-index: 2;
       margin-right: 50px;
   }
 
-  .profile-counter
+  .profile-id
   {
     margin-top: 30px;
   }
 
-  .profile-id
+  .profile-input-id
   {
-    margin-top: 80px;
+    margin-top: 30px;
     
   }
 

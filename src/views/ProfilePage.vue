@@ -6,8 +6,8 @@
               <div class="profile-text-email">
                   Email:
               </div>
-              <div class="profile-text-telephone">
-                  Телефон:
+              <div class="profile-input-email">
+
               </div>
           </div>
           <div class="profile-photo-fio">
@@ -16,7 +16,7 @@
               </div>
 
               <div class="profile-fio">
-                  ФИО
+                  Имя
               </div>
                 <div class="exit-profile-button">
                   <a v-on:click="exitAcc()" class="button-exit">
@@ -28,11 +28,11 @@
               
           </div>
           <div class="profile-id-counter">
-              <div class="profile-counter">
-                  Количество пройденных тестов:
-              </div>
-               <div class="profile-id">
+              <div class="profile-id">
                  ID:
+              </div>
+               <div class="profile-input-id">
+               
               </div>
 
           </div>
