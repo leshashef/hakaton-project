@@ -38,7 +38,7 @@
               </div>
           </div>
             <div>
-                <div>
+                <div class="div_button">
                     <a class="bn31" v-on:click="logIn" href="/"><span class="bn31span">Войти</span></a>
                 </div>
               
