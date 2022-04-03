@@ -1,6 +1,7 @@
 <template>
   <div class = "registration-main">
     <div class="registration-background-left-side">
+      <div class="div-registration-form">
    <div class="registration-form">
       <div class="title-registration-form">
         Регистрация
@@ -28,16 +29,16 @@
              <a class="bn31" v-on:click="send()" href="#"><span class="bn31span" style="font-size:15px">Зарегистрироваться</span></a>
       </div>
 
-    </div>
-   
+      </div>
+   </div>
+   <div class="registration-login-url-button">
+      <a class="bn31" v-on:click="send()" href="#"><span class="bn31span" style="font-size:15px">Авторизоваться</span></a>
+   </div>
   </div>
 
   <div class="registration-background-right-side">
     <img src="/img/img/Clogo.png" class="registration-logo-language-right-side">
-    <div class="registration-language-description-right-side">
-      Описание языка или технологии
-    </div>
-    
+    <img src="/img/img/bankinvest.jpg" class="registration-logo-bank-right-side">
     </div>
 
   
