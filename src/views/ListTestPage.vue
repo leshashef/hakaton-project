@@ -89,13 +89,32 @@ export default {
         }
     },
     created(){ 
-        
+        this.GetLogin();
         this.getList();
     },
     mounted(){
         this.listHtml = document.getElementById('ListTests');
     },
     methods:{
+        async  GetLogin(){
+            let response = await fetch("https://localhost:7101/api/CheckLogin",
+                {
+                    method: 'GET',
+                    mode: 'cors',
+                    credentials: 'include'
+                }    
+            );
+            if (response.ok) { // если HTTP-статус в диапазоне 200-299
+                    // получаем тело ответа (см. про этот метод ниже)
+                let json = await response.json();
+                console.log(json);
+                if(json.redirect != undefined){
+                    this.$router.push(json.redirect);
+                }
+                } else {
+                alert("Ошибка HTTP: " + response.status);
+            }
+        },
         selectTest(item){
             console.log(item);
             this.selectTestf = item;

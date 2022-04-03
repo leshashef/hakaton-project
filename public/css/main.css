@@ -645,3 +645,13 @@ margin-bottom: 50px;
         height: 150px;
         
     }
+
+  
+    .registration-login-url-button{
+          position: absolute;
+        bottom: 0px;
+        transform: translateX(-50%);
+        left: 257.5px;
+        margin-bottom: 10px;
+
+    }

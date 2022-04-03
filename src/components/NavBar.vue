@@ -34,7 +34,7 @@
           О приложении
       </div>
       <div class="exit-profile-button">
-        <a class="button-exit">
+        <a v-on:click="exitAcc()" class="button-exit">
       <span class="button-exitspan">
         Выход
       </span>
@@ -74,6 +74,22 @@ export default {
 
     methods:
     {
+     async exitAcc(){
+            let response = await fetch("https://localhost:7101/api/LogOut",
+            {
+                method: 'GET',
+                mode: 'cors',
+                credentials: 'include'
+            }
+            );
+
+            if (response.ok) { // если HTTP-статус в диапазоне 200-299
+            // получаем тело ответа (см. про этот метод ниже)
+                this.$router.push("/");
+            } else {
+            alert("Ошибка HTTP: " + response.status);
+            }
+      },
            openBarMenu:function()
            {
                this.active = !this.active;

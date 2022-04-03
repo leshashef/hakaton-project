@@ -5,11 +5,15 @@
             <div class="margin-50px"><img width="300" :src="'data:image/jpeg;base64,'+dataTest.imgTest" alt=""></div>
             <div class="play-test" v-if="!finalTest">
                     <div class="quest-test">Вопрос: {{currentQuest.nameQuests}}</div> 
-                    
-                    <div v-for="(item, index) in currentQuest.jsontext" v-bind:key="index">
-                        {{item.NameAnswer}} <input v-on:change="selectAnswer(item, currentQuest.id)" class="radio" :name="currentQuest.id" type="radio">
-                    </div>
-                    
+                    <form >
+                        <div v-for="(item, index) in currentQuest.jsontext" v-bind:key="index">
+                            <label class="radio-new">
+                                <input class="radio" v-on:change="selectAnswer(item, currentQuest.id)" type="radio" :name="currentQuest.id"/>
+                                <span>{{item.NameAnswer}}</span>
+                            </label>
+                            <!-- {{item.NameAnswer}} <input v-on:change="selectAnswer(item, currentQuest.id)" class="radio" :name="currentQuest.id" type="radio"> -->
+                        </div>
+                    </form>
                     <button class="bn32" v-on:click="nextQuest" v-if="answerCount >= currentQuestIndex +1 && currentQuestIndex < allQuest-1"><span class="bn32span" style="font-size:15px">Следующий вопрос</span></button>
                     <button class="bn32" v-on:click="endTest" v-if="answerCount >= currentQuestIndex +1 && currentQuestIndex == allQuest-1"><span class="bn32span" style="font-size:15px">Завершить тест</span></button>
             </div>
@@ -51,10 +55,30 @@ export default {
         }
     },
     created(){
+        this.GetLogin();
         this.getTest();
 
     },
     methods:{
+        async  GetLogin(){
+            let response = await fetch("https://localhost:7101/api/CheckLogin",
+                {
+                    method: 'GET',
+                    mode: 'cors',
+                    credentials: 'include'
+                }    
+            );
+            if (response.ok) { // если HTTP-статус в диапазоне 200-299
+                    // получаем тело ответа (см. про этот метод ниже)
+                let json = await response.json();
+                console.log(json);
+                if(json.redirect != undefined){
+                    this.$router.push(json.redirect);
+                }
+                } else {
+                alert("Ошибка HTTP: " + response.status);
+            }
+        },
         endTest(){
             let counter = {};
             for(let item of this.dataTest.resultTests){
@@ -228,4 +252,45 @@ html, body{
     background: transparent;
   }
 
+
+    .radio-new {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+}
+.radio-new input {
+  position: absolute;
+  left: -9999px;
+}
+.radio-new input:checked + span {
+  background-color: #d6d6e5;
+}
+.radio-new input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em #00005c;
+}
+.radio-new span {
+  display: flex;
+  align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  transition: 0.25s ease;
+}
+.radio-new span:hover {
+  background-color: #d6d6e5;
+}
+.radio-new span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em #00005c;
+}
 </style>

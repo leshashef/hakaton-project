@@ -32,7 +32,7 @@
       </div>
    </div>
    <div class="registration-login-url-button">
-      <a class="bn31" v-on:click="send()" href="#"><span class="bn31span" style="font-size:15px">Авторизоваться</span></a>
+      <router-link class="bn31" to="/login" ><span class="bn31span" style="font-size:15px">Авторизоваться</span></router-link>
    </div>
   </div>
 
