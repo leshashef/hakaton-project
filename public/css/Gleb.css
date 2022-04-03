@@ -714,8 +714,17 @@ z-index: 2;
   .profile-footer-url
   {
      font-size: 25px;
-    width: 25%;
+    width: 23%;
     font-family: PT Serif;
+    transition: 0.5s; 
+     text-align: center; 
+     margin-left: 25px;
+    
+  }
+
+  .profile-footer-url:hover
+  {
+    transform: scale(1.1);
     
   }
 
@@ -723,7 +732,14 @@ z-index: 2;
   {
     text-decoration: none;
     color: rgb(11, 116, 25);
+    
   }
+
+  .url:hover
+  {
+      color:white;
+  }
+
   .profile-footer-part
   {
       width: 100%;
