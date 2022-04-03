@@ -655,3 +655,15 @@ margin-bottom: 50px;
         margin-bottom: 10px;
 
     }
+
+    .log-to-reg{
+        position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    }
+
+    .big-reg-button{
+        width: 200px;
+        height: 80px;
+    }

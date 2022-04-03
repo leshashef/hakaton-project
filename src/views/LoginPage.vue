@@ -39,13 +39,15 @@
           </div>
             <div>
                 <div class="div_button">
-                    <a class="bn31" v-on:click="logIn" href="/"><span class="bn31span">Войти</span></a>
+                    <a class="bn31" v-on:click="logIn" href="#"><span class="bn31span">Войти</span></a>
                 </div>
               
           </div>
       </div>
 
- 
+      <div class="div_button log-to-reg">
+           <router-link class="bn31 big-reg-button" to="/registration"><span class="bn31span">Регистрация</span></router-link>
+      </div>
       
   </div>
 
@@ -82,8 +84,7 @@ export default {
 
                 if (response.ok) { // если HTTP-статус в диапазоне 200-299
                 // получаем тело ответа (см. про этот метод ниже)
-                let json = await response.json();
-                console.log(json);
+                this.$router.push('/profilePage');
                 } else {
                 alert("Ошибка HTTP: " + response.status);
                 }
