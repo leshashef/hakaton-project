@@ -4,6 +4,7 @@
       <div class="profile-main-part">
           <div class="profile-email-telephone">
               <div class="profile-text-email">
+                <img src="/img/img/emailicon.png" class="profile-email-icon">
                   Email:
               </div>
               <div class="profile-input-email">
@@ -12,7 +13,7 @@
           </div>
           <div class="profile-photo-fio">
               <div class="profile-photo">
-                  <img class="profile-photo-img">
+                  <img class="profile-photo-img" src="/img/img/Clogo.png">
               </div>
 
               <div class="profile-fio">
@@ -29,6 +30,7 @@
           </div>
           <div class="profile-id-counter">
               <div class="profile-id">
+                 <img src="/img/img/idicon.png" class="profile-id-icon">
                  ID:
               </div>
                <div class="profile-input-id">
@@ -53,16 +55,24 @@
       </div>
           <div class="profile-footer-list-url">
                <div class="profile-footer-url" >
-                 <router-link to="/" class="url"> Главная страница </router-link>
+                  <router-link to="/" class="url">
+                 <img src="/img/img/homepageicon.png" class="icon-footer-url">
+                 Главная страница </router-link>
                </div>
                <div class="profile-footer-url">
-                 <router-link to="/listtest" class="url"> Список тестов </router-link>
+                  <router-link to="/listtest" class="url">
+                  <img src="/img/img/testingicon.png" class="icon-footer-url">
+                 Список тестов </router-link>
                </div>
                <div class="profile-footer-url">
-                 <router-link to="/edit-test" class="url"> Создание тестов </router-link>
+                 <router-link to="/edit-test" class="url">
+                  <img src="/img/img/createtest.png" class="icon-footer-url">
+                  Создание тестов </router-link>
                </div>
                <div class="profile-footer-url">
-                 <router-link to="/about" class="url"> О приложении </router-link>
+                 <router-link to="/about" class="url">
+                   <img src="/img/img/abouticon.png" class="icon-footer-url">
+                  О приложении </router-link>
                </div>
           </div>
 
