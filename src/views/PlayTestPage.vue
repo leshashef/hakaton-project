@@ -24,6 +24,14 @@
                 </div>
                 <div class="rout-go">
                     <router-link class="link" to="/listtest">Ещё тесты</router-link>
+                    <div class="playtest-bank">
+                        <div class="playtest-bank-url">
+                            <a href="https://www.centrinvest.ru/ru/" style="text-decoration:none">Банк Центр-Инвест</a>
+                        </div>
+                        <div class="playtest-bank-img">
+                            <img>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
