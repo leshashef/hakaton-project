@@ -3,33 +3,39 @@
         <div  v-if="!TestUndefined && dataTest!=null">
             <div><h1 class="title-edit">Тест: {{dataTest.testName}}</h1></div>
             <div class="margin-50px"><img width="300" :src="'data:image/jpeg;base64,'+dataTest.imgTest" alt=""></div>
-            <div v-if="!finalTest">
-                    Вопрос: {{currentQuest.nameQuests}}
+            <div class="play-test" v-if="!finalTest">
+                    <div class="quest-test">Вопрос: {{currentQuest.nameQuests}}</div> 
+                    
                     <div v-for="(item, index) in currentQuest.jsontext" v-bind:key="index">
-                        {{item.NameAnswer}} <input v-on:change="selectAnswer(item, currentQuest.id)" :name="currentQuest.id" type="radio">
+                        {{item.NameAnswer}} <input v-on:change="selectAnswer(item, currentQuest.id)" class="radio" :name="currentQuest.id" type="radio">
                     </div>
                     <button v-on:click="nextQuest" v-if="answerCount >= currentQuestIndex +1 && currentQuestIndex < allQuest-1">Следующий вопрос</button>
                     <button v-on:click="endTest" v-if="answerCount >= currentQuestIndex +1 && currentQuestIndex == allQuest-1">Закончить</button>
             </div>
-            <div v-else>
+            <div class="play-test" v-else>
                 <h2>Итоги теста:</h2>
                 <div v-for="(item, index) in finalTestArray" v-bind:key="index">
                     <div>{{item.name}}</div>
+                </div>
+                <div class="rout-go">
+                    <router-link class="link" to="/listtest">Ещё тесты</router-link>
                 </div>
             </div>
         </div>
         <div  v-else-if="TestUndefined">
             <div>Такого теста не существует</div>
-            <div></div>
+            <div class="rout-go">
+                    <router-link class="link" to="/listtest">К списку тестов</router-link>
+                </div>
         </div>
-        <nav-bar/>
+        <!-- <nav-bar/> -->
     </div>
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue';
+//import NavBar from '../components/NavBar.vue';
 export default {
-     components: { NavBar },
+    //  components: { NavBar },
     data(){
         return{
             TestUndefined: false,
@@ -50,17 +56,23 @@ export default {
     methods:{
         endTest(){
             let counter = {};
-            for(let item of this.answers){
-                if(counter[item.changeRes]!= undefined){
-                    counter[item.changeRes].value += item.value;
-                }
-                else{
-                    counter[item.changeRes] = {
-                        name:item.changeRes,
-                        value: item.value
-                    }
-                }
+            for(let item of this.dataTest.resultTests){
+                counter[item.resultName] = {name:item.resultName,value:0};
             }
+            for(let item of this.answers){
+                for(let el of item.changeRes){
+                    console.log(counter);
+                    console.log(el);
+                     counter[el.changeRes].value -= -el.value;
+                }
+                
+                 
+                 // = {
+                //     name:item.changeRes,
+                //     value: item.value
+                // }
+            }
+            console.log(counter);
             let dop = [];
             let winner = null;
             for(let item in counter){
@@ -82,6 +94,10 @@ export default {
             this.finalTest = true;
         },
         nextQuest(){
+            let radio = document.getElementsByClassName('radio');
+            for(let el of radio){
+                el.checked = false;
+            }
             this.currentQuestIndex++;
             this.currentQuest = this.dataTest.quests[this.currentQuestIndex]
         },
@@ -89,11 +105,11 @@ export default {
             for(let find of this.answers){
                 if(find.id == id){
                     find.nameAnswer = item.NameAnswer;
-                    find.changeRes = item.changeRes;
+                    find.changeRes = item.exodus;
                     return;
                 }
             }
-            this.answers.push({nameAnswer:item.NameAnswer,id:id,changeRes:item.changeRes,value:item.value});
+            this.answers.push({nameAnswer:item.NameAnswer,id:id,changeRes:item.exodus});
             this.answerCount = this.answers.length;
         },
         async getTest(){
@@ -153,4 +169,26 @@ html, body{
 .margin-50px{
     margin-bottom: 50px;
 }
+ .play-test{
+    width: 500px;
+    margin: auto;
+    background: #8c9095;
+    border-radius: 50px;
+    font-size: 30px;
+    padding: 20px;
+  }
+  .quest-test{
+      font-size: 35px;
+      border-bottom: 1px solid #2c3e50;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+  }
+  .rout-go{
+      margin-top: 20px;
+      font-size: 22px;
+     
+  }
+  .link{
+      color: aliceblue;
+  }
 </style>

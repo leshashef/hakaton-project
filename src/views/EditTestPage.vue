@@ -50,8 +50,8 @@
                     <div class="questname">{{item.QuestName}}</div>
                     <div>
                         <div class="form__group field">
-                            <input v-model="item.lastAnswer" type="input" class="form__field" placeholder="Добавьте ответ" name="answer" id='answer' required />
-                            <label  for="answer" class="form__label form_label-left0">Добавьте ответ</label>
+                            <input v-model="item.lastAnswer" type="input" class="form__field" placeholder="Добавьте ответ" :name="'answer'+index" :id="'answer'+index" required />
+                            <label  :for="'answer'+index" class="form__label form_label-left0">Добавьте ответ</label>
                         </div>
                     </div>
                     <button v-on:click="addAnswer(item)">Добавить</button>
@@ -59,14 +59,18 @@
                         <div>
                             {{it.NameAnswer}}
                         </div>
-                        <div>
-                            <select v-model="it.changeRes">
-                                <option v-for="(el,ind) in result" v-bind:key="ind">{{el}}</option>
-                            </select>
+                        <div  v-for="(el,iter) in it.exodus" v-bind:key="iter">
+                            <div>
+                                <select v-model="el.changeRes">
+                                    <option v-for="(res,ind) in result" v-bind:key="ind">{{res}}</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input v-model="el.value" type="text">
+                            </div>
                         </div>
-                        <div>
-                            <input v-model="it.value" type="text">
-                        </div>
+                         <button v-if="it.exodus.length<result.length" v-on:click="addExodus(it)">Добавить влияние</button>
+                        
                     </div>
                 </div>
             </div>
@@ -97,6 +101,13 @@ export default {
         
     },
     methods:{
+        addExodus(it){
+            let ex = {
+                changeRes:null,
+                value:null
+            }
+            it.exodus.push(ex);
+        },
       async  GetLogin(){
             let response = await fetch("https://localhost:7101/api/CheckLogin",
                 {
@@ -178,8 +189,9 @@ export default {
             if(quest.lastAnswer !=null){
                 let ans = {
                     NameAnswer:quest.lastAnswer,
-                    changeRes:null,
-                    value:null
+                    exodus:[],
+                    // changeRes:null,
+                    // value:null
                 }
                 quest.json.push(ans);
             }
