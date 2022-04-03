@@ -9,8 +9,9 @@
                     <div v-for="(item, index) in currentQuest.jsontext" v-bind:key="index">
                         {{item.NameAnswer}} <input v-on:change="selectAnswer(item, currentQuest.id)" class="radio" :name="currentQuest.id" type="radio">
                     </div>
-                    <button v-on:click="nextQuest" v-if="answerCount >= currentQuestIndex +1 && currentQuestIndex < allQuest-1">Следующий вопрос</button>
-                    <button v-on:click="endTest" v-if="answerCount >= currentQuestIndex +1 && currentQuestIndex == allQuest-1">Закончить</button>
+                    
+                    <button class="bn32" v-on:click="nextQuest" v-if="answerCount >= currentQuestIndex +1 && currentQuestIndex < allQuest-1"><span class="bn32span" style="font-size:15px">Следующий вопрос</span></button>
+                    <button class="bn32" v-on:click="endTest" v-if="answerCount >= currentQuestIndex +1 && currentQuestIndex == allQuest-1"><span class="bn32span" style="font-size:15px">Завершить тест</span></button>
             </div>
             <div class="play-test" v-else>
                 <h2>Итоги теста:</h2>
@@ -191,4 +192,40 @@ html, body{
   .link{
       color: aliceblue;
   }
+  .bn32 {
+      margin: auto;
+    background-image: linear-gradient(to right, #89bd9b 0%, #179b56 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #63f2a6;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+    left: 0;
+  }
+  
+  .bn32:hover {
+    color: #fff;
+  }
+  
+  .bn32 .bn32span {
+    align-items: center;
+    background: rgb(11 146 90);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .bn32:hover .bn32span {
+    background: transparent;
+  }
+
 </style>

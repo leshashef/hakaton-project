@@ -11,6 +11,11 @@
 
         <div class="title-test-left-side">
             Название теста
+            <div class="text-list-test" v-if="selectTestf!=null">
+                <div>{{selectTestf.testName}}</div> 
+                <div>Автор: {{selectTestf.user.userName}}</div>
+            </div>
+           
         </div>
 
         <div class="div-all-test-title-left-side">
@@ -22,6 +27,9 @@
         </div>
     
     <div class="page-main-right-side">
+        <div class="link_to-play" v-if="selectTestf!=null">
+             <router-link class="bn31 bn-big" :to="'/play-test/'+selectTestf.id"><span class="bn31span" style="font-size: 30px;">Пройти</span></router-link>
+        </div>
     </div>
   
 </div>
@@ -76,7 +84,8 @@ export default {
             ListTest:[],
             listHtml:null,
             listCount:7,
-            rightShift:0
+            rightShift:0,
+            selectTestf:null
         }
     },
     created(){ 
@@ -89,6 +98,7 @@ export default {
     methods:{
         selectTest(item){
             console.log(item);
+            this.selectTestf = item;
         },
         leftArrow(){
             if(this.rightShift != 0){

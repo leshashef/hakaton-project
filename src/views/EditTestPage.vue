@@ -25,7 +25,8 @@
                         <label  for="ImgTest" class="form__label form_label-left0">Добавьте результаты для тестов</label>
                     </div>
                 </div>
-                <button v-on:click="addResult">Добавить</button>
+                <!-- <a class="bn31" v-on:click="send()" href="#"><span class="bn31span" style="font-size:15px">Зарегистрироваться</span></a>  -->
+                <button class="bn31" v-on:click="addResult"><span class="bn31span" style="font-size:15px">Добавить</span></button>
                 <!-- <label for="ImgTest">Добавьте результаты для тестов</label>
                 <input v-model="resultCur" type="text"> -->
                 <div class="grid-container-row margin-20px">
@@ -44,7 +45,7 @@
                     </div>
 
                 </div>
-                <button v-on:click="addQuest">Добавить</button>
+                <button class="bn31" v-on:click="addQuest"><span class="bn31span" style="font-size:15px">Добавить</span></button>
 
                 <div v-for="(item,index) in quest" v-bind:key="index">
                     <div class="questname">{{item.QuestName}}</div>
@@ -54,27 +55,27 @@
                             <label  :for="'answer'+index" class="form__label form_label-left0">Добавьте ответ</label>
                         </div>
                     </div>
-                    <button v-on:click="addAnswer(item)">Добавить</button>
+                    <button class="bn31" v-on:click="addAnswer(item)"><span class="bn31span" style="font-size:15px">Добавить</span></button>
                     <div v-for="(it,inde) in item.json" v-bind:key="inde">
-                        <div>
-                            {{it.NameAnswer}}
+                        <div class="font-size-test-20">
+                           Ответ: {{it.NameAnswer}}
                         </div>
                         <div  v-for="(el,iter) in it.exodus" v-bind:key="iter">
                             <div>
-                                <select v-model="el.changeRes">
+                                <select class="select-input" v-model="el.changeRes">
                                     <option v-for="(res,ind) in result" v-bind:key="ind">{{res}}</option>
                                 </select>
                             </div>
                             <div>
-                                <input v-model="el.value" type="text">
+                                <input class="number-input" v-model="el.value" min="-1000" max="1000" type="number">
                             </div>
                         </div>
-                         <button v-if="it.exodus.length<result.length" v-on:click="addExodus(it)">Добавить влияние</button>
+                         <button class="bn31" v-if="it.exodus.length<result.length" v-on:click="addExodus(it)"><span class="bn31span" style="font-size:15px">Добавить влияние</span></button>
                         
                     </div>
                 </div>
             </div>
-            <div class="btn-send-centr"><button v-on:click="Send()">Сохранить тест</button></div>
+            <div class="btn-send-centr"><button class="bn31" v-on:click="Send()"><span class="bn31span" style="font-size:15px">Сохранить тест</span></button></div>
         </div>
         <nav-bar/>
     </div>

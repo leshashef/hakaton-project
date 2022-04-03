@@ -13,9 +13,14 @@
                     Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
                 </span>
             </div>
-            <div>
-                <a class="bn31" href="/registration"><span class="bn31span">Регистрация</span></a>
-                <a class="bn31" href="/login"><span class="bn31span">Авторизация</span></a>
+            <div class="text_bn31">
+              <div class="div-bn31-welcome">
+                 <router-link class="bn31 dop-bn31" to="/registration"><span class="bn31span">Регистрация</span></router-link>
+              </div>
+               <div class="div-bn31-welcome">
+                  <router-link class="bn31 dop-bn31" to="/login"><span class="bn31span">Авторизация</span></router-link>
+               </div>
+               
             </div>
           </div>
           
@@ -38,68 +43,7 @@
         </div>
 
     </div>
-    <!-- <div>
-       <div class="First-card">
-            <div class="First-Tittle">
-                IT-Trend
-            </div> 
-             <div class="First-image">
-                <img src="/img/img/image-welcome.png" alt="error">
-            </div>
-             <div class="emblem">
-                <img src="/img/img/emblem.png" alt="error">
-            </div>
-              <div class="Background-text">
-                <div class="First-Text">
-                   Данное приложение <br> поможет вам определить<br> вашу предрасположенность <br>в IT сфере
-                </div>
-              </div>
-              
-            
-              <button class="Login-button">
-                <h1>Вход</h1>
-
-              </button>
-              <button class="Register-button">
-                <h1>Регистрация</h1>
-
-              </button>
-            
-            <div class="Second-Button">
-
-            </div>
-
-       </div> 
-       <div class="Second-card">
-            <div class="Second-Text">
-                Для кого подходит приложение?
-            </div> 
-            <div class="Photo1">
-                <img class="Photograph" src="/img/img/student.png" alt="error">
-            </div> 
-            <div class="Photo2">
-              <img class="Photograph2" src="/img/img/IT.jpg" alt="error">
-                
-            </div> 
-            <div class="Photo3">
-                
-            </div> 
-            <div class="Photo-text1">
-                <div>Для школьников/студентов</div>
-            </div> 
-            <div class="Photo-text2">
-                <div>Для людев в IT</div>
-            </div> 
-            <div class="Photo-text3">
-                <div>Для любых желающих</div>
-            </div> 
-            
-
-            
-       </div> 
-       
-    </div>  -->
-
+    
 </template>
 
 <script>
