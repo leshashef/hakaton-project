@@ -805,3 +805,8 @@ z-index: 2;
     object-fit: cover;
     border-radius: 180px;
   }
+
+  .playtest-bank-url
+  {
+    margin-top:20px;
+  }

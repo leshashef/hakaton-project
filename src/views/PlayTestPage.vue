@@ -26,7 +26,12 @@
                     <router-link class="link" to="/listtest">Ещё тесты</router-link>
                     <div class="playtest-bank">
                         <div class="playtest-bank-url">
-                            <a href="https://www.centrinvest.ru/ru/" style="text-decoration:none">Банк Центр-Инвест</a>
+                               Банк Центр-Инвест
+                            <div class="qrcode-bank">
+                                <a href="https://www.centrinvest.ru/ru/">
+                                <img src="/img/img/qr-code.png">
+                                </a>
+                            </div>
                         </div>
                         <div class="playtest-bank-img">
                             <img>
