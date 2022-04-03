@@ -8,7 +8,7 @@
     </div>
       <div class="photo-fio">
             <div class ="photo-menu">
-                 <img/>
+                 <img class="img-menu-bar">
             </div>
         <div class="fio-menu">
           ФИО
