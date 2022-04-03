@@ -39,15 +39,13 @@
           </div>
             <div>
                 <div class="div_button">
-                    <a class="bn31" v-on:click="logIn" href="#"><span class="bn31span">Войти</span></a>
+                    <a class="bn31" v-on:click="logIn" href="/"><span class="bn31span">Войти</span></a>
                 </div>
               
           </div>
       </div>
 
-      <div class="div_button log-to-reg">
-           <router-link class="bn31 big-reg-button" to="/registration"><span class="bn31span">Регистрация</span></router-link>
-      </div>
+ 
       
   </div>
 
