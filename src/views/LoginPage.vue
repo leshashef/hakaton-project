@@ -23,8 +23,8 @@
           <div >
             <div>
                 <div class="form__group field">
-                        <input type="input" class="form__field" placeholder="Email" name="name" id='name' required />
-                    <label for="name" class="form__label">Email</label>
+                        <input type="input" class="form__field" placeholder="Email" name="email" id='email' required />
+                    <label for="email" class="form__label">Email</label>
                 </div>
             </div>
              
@@ -32,8 +32,8 @@
             <div>
               <div>
                   <div class="form__group field-name">
-                  <input class="form__field" type="password" placeholder="Пароль" name="email" id='email' required />
-                    <label for="name" class="form__label">Пароль</label>
+                  <input class="form__field" type="password" placeholder="Пароль" name="password" id='password' required />
+                    <label for="password" class="form__label">Пароль</label>
                 </div>
               </div>
           </div>
@@ -44,13 +44,17 @@
               
           </div>
       </div>
+
+      <nav-bar/>
       
   </div>
 
 </template>
 
 <script>
+import NavBar from '../components/NavBar.vue';
 export default {
+  components: { NavBar },
 
 }
 </script>
